@@ -1,0 +1,59 @@
+
+.signin{
+  transform: translateY(-80px);
+  display: inline-flex;
+}
+.linksign{
+  color: black;
+  font-size: 15px;
+  
+} 
+.linksigns{
+  color: rgb(123, 255, 123);
+  font-size: 15px;
+  
+} 
+.submitnow{
+  padding: 8px;
+  font-size: 13px;
+  width: 450px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  background-color: rgb(104, 241, 104);
+  color: white;
+}
+.dive{
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 70px 100px;
+  width: 100%;
+  margin: 3px auto;
+} 
+.usern{
+  margin-top: 20px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+
+} 
+.inputs{
+  
+  padding: 12px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid rgb(135, 201, 232);
+  width: 450px;
+} 
+.link{
+  color: black;
+  font-size: 25px;
+  
+} 
+.liks:hover{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+

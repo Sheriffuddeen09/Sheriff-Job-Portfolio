@@ -1,0 +1,613 @@
+{
+  "accordions": [
+    {
+      "id": "1",
+      "title": "Dated posted",
+      "body": "Last 24 hours",
+      "body2": "Last 3 days",
+      "body3": "Last 7 days",
+      "body4": "Last 14 days"
+    },
+    {
+      "id": "2",
+      "title": "Job type",
+      "body": "Permanent",
+      "body2": "Contract",
+      "body3": "Full-time",
+      "body4": "New-Grad",
+      "body5": "Intership",
+      "body6": "Temporary"
+    },
+    {
+      "id": "3",
+      "title": "Location",
+      "body": "Lagos",
+      "body1": "Lekki"
+    },
+    {
+      "id": "4",
+      "title": "Company",
+      "body": "Tek Expert",
+      "body1": "Co-create Hub",
+      "body2": "Apex Network",
+      "body3": "Seamfix",
+      "body4": "NewGlobe",
+      "body5": "Moniepoint",
+      "body6": "fatherland",
+      "body7": "01 Technologies",
+      "body8": "VendEase",
+      "body9": "Subhujo Technologies",
+      "body10": "Pivotage Consult"
+    },
+    {
+      "id": "5",
+      "title": "Language",
+      "body": "English"
+    }
+  ],
+  "companys": [
+    {
+      "title": "YALE FOODS LIMITED",
+      "star": "images/half star.webp",
+      "reviews": "14 reviews",
+      "salary": "Salaries",
+      "qa": "Q&A",
+      "open": "Open jobs",
+      "image": "images/placeholder.svg",
+      "titleb": "Airtel Nigeria",
+      "starb": "./images/half star.webp",
+      "reviewsb": "78 reviews",
+      "salaryb": "Salaries",
+      "qab": "Q&A",
+      "openb": "Open jobs",
+      "imageb": "images/placeholder.svg",
+      "titlec": "PalmPay",
+      "starc": "./images/half star.webp",
+      "reviewsc": "10 reviews",
+      "salaryc": "Salaries",
+      "qac": "Q&A",
+      "openc": "Open jobs",
+      "imagec": "images/placeholder.svg",
+      "titled": "Wema Bank Plc",
+      "stard": "./images/half star.webp",
+      "reviewsd": "156 reviews",
+      "salaryd": "Salaries",
+      "qad": "Q&A",
+      "opend": "Open jobs",
+      "imaged": "images/wema.jpg",
+      "titlee": "BAT",
+      "stare": "./images/half star.webp",
+      "reviewse": "2,760 reviews",
+      "salarye": "Salaries",
+      "qae": "Q&A",
+      "opene": "Open jobs",
+      "imagee": "images/bat.jpg",
+      "titlef": "The Coca-Cola Company",
+      "starf": "./images/half star.webp",
+      "reviewsf": "10,665 reviews",
+      "salaryf": "Salaries",
+      "qaf": "Q&A",
+      "openf": "Open jobs",
+      "imagef": "images/coca.jpg",
+      "titleg": "LAPO MICROFINANCE BANK",
+      "starg": "./images/half star.webp",
+      "reviewsg": "41 reviews",
+      "salaryg": "Salaries",
+      "qag": "Q&A",
+      "openg": "Open jobs",
+      "imageg": "images/placeholder.svg",
+      "titleh": "Polaris Bank Limited",
+      "starh": "./images/half star.webp",
+      "reviewsh": "86 reviews",
+      "salaryh": "Salaries",
+      "qah": "Q&A",
+      "openh": "Open jobs",
+      "imageh": "images/placeholder.svg",
+      "titlei": "Access Bank Plc",
+      "stari": "./images/half star.webp",
+      "reviewsi": "78 reviews",
+      "salaryi": "Salaries",
+      "qai": "Q&A",
+      "openi": "Open jobs",
+      "imagei": "images/access.jpg",
+      "imagej": "images/bat.jpg",
+      "titlej": "BAT",
+      "ratej": "4.3",
+      "reviewsj": "⭐ 2.8K reviews",
+      "imagek": "images/rey.jpg",
+      "titlek": "Reynolds...",
+      "ratek": "3.7",
+      "reviewsk": "⭐ 609K reviews",
+      "imagel": "images/coca.jpg",
+      "titlel": "The Coca-Cola...",
+      "ratel": "3.8",
+      "reviewsl": "⭐ 10.7K reviews",
+      "imagem": "images/cola.jpg",
+      "titlem": "Coca-Cola...",
+      "ratem": "3.0",
+      "reviewsm": "⭐ 1.7K reviews",
+      "id": "b2c4"
+    }
+  ],
+  "posts": [
+    {
+      "userId": 1,
+      "id": "1",
+      "company": "Global SJX Limited",
+      "message": "Dear Odukoya Sheriff, Thank you for taking the time to apply for the Position of a Senior Frontend Engineer (3+yrs). We appreciate your interest in our Company – Global SJX Limited. Your resume will be reviewed and if considered fit for the position, you will be contacted for the next stage – Interview I. If you are not contacted for the next stage then it means your applications was not considered. We will however keep your resume in our database for the next 180 days for consideration for other positions. Once again, we thank you for your interest in our company",
+      "date": "mar 30",
+      "image": "images/placeholder.svg",
+      "inboximg": "images/whitesmoke.png",
+      "inbox": "",
+      "sinbox": "",
+      "state": "ibadan",
+      "typea": "New grad",
+      "typeb": "Intership",
+      "salary": "#50,000 - #60,000 a month"
+    },
+    {
+      "userId": 1,
+      "id": "2",
+      "company": "The Plenipotent Company Limited",
+      "message": "Plenipotent Company Limited Thank you for your interest in the Graphic Design Trainee (Remote) position at The Plenipotent Company Limited. Thank you for your interest in the Graphic Design Trainee (Remote) position at The Plenipotent Company Limited. https://linkapp.click/gdtrainee Best wishes!",
+      "date": "mar 30",
+      "image": "images/placeholder.svg",
+      "inboximg": "images/whitesmoke.png",
+      "inbox": "",
+      "sinbox": "",
+      "state": "Lagos",
+      "typea": "New grad",
+      "typeb": "Remote",
+      "salary": "#250,000 - #300,000 a month"
+    },
+    {
+      "userId": 1,
+      "id": "3",
+      "company": "Strive Education",
+      "message": "Hey Odukoya, Thanks for showing your interest in the part-time coding teacher role at Strive, https://airtable.com/shrAgI9x2xW2uxLAB?prefill_Position=Coding%20Teacher%20%28Part-time%29",
+      "date": "jan 31",
+      "image": "images/placeholder.svg",
+      "inboximg": "images/whitesmoke.png",
+      "inbox": "",
+      "sinbox": "",
+      "state": "Ikeja",
+      "typea": "New grad",
+      "typeb": "Full-Time",
+      "salary": "#150,000 - #200,000 a month"
+    },
+    {
+      "userId": 1,
+      "id": "4",
+      "company": "Globexia Limited via Indeed",
+      "message": "Good News! You are invited to a phone interview for the Data Entry position at Globexia Limited",
+      "date": "feb 17",
+      "image": "images/placeholder.svg",
+      "inbox": "You have messages",
+      "sinbox": "Select a conversation to read",
+      "inboximg": "images/message.jpg",
+      "state": "Lagos",
+      "typea": "New grad",
+      "typeb": "Part-time",
+      "salary": "#120,000 a month"
+    },
+    {
+      "userId": 1,
+      "id": "5",
+      "company": "Stallion technology",
+      "message": "Good morning sir , Have sent mail to the gmail you redirected me to send mail to for the selected time and date for interview, but have not see any feedback.",
+      "date": "jan 31",
+      "image": "images/placeholder.svg",
+      "inboximg": "images/whitesmoke.png",
+      "inbox": "",
+      "sinbox": "",
+      "state": "Lagos",
+      "typea": "New grad",
+      "typeb": "Full-Time",
+      "salary": "#250,000 a month"
+    },
+    {
+      "userId": 1,
+      "id": "6",
+      "company": "Balog",
+      "message": "Good day sir , have been looking forward for the interview call up.",
+      "date": "nov 12",
+      "image": "images/placeholder.svg",
+      "inboximg": "images/whitesmoke.png",
+      "inbox": "",
+      "sinbox": "",
+      "state": "Lagos",
+      "typea": "New grad",
+      "typeb": "Contract",
+      "salary": "#700,000 a month"
+    },
+    {
+      "userId": 1,
+      "id": "7",
+      "company": "Digiplanet Solutions Company",
+      "message": "digiplanet solutions Good day and welcome to Digiplanet. We are a company with so many web development and mobile projects to execute. We offer 100% remote opportunities so once you get to do a project with us successfully, we bring you so many other projects. We work with a high level of integrity and will appreciate that you offer the same too. We discuss timeline and budget, agree then you execute and get paid 100% only on successful completion of a project so if our policy works fine for you, please indicate so we can discuss further. Thank you.",
+      "date": "jan 21",
+      "image": "images/placeholder.svg",
+      "inbox": "",
+      "sinbox": "",
+      "inboximg": "images/whitesmoke.png",
+      "state": "Surulere",
+      "typea": "New grad",
+      "typeb": "Remote",
+      "salary": "#200,000 a month"
+    },
+    {
+      "userId": 2,
+      "id": "1",
+      "company": "",
+      "message": "",
+      "date": "",
+      "image": "images/spam.png",
+      "inbox": "You have no messages in the spam folder",
+      "inboximg": "images/spam.png",
+      "sinbox": ""
+    },
+    {
+      "userId": 3,
+      "id": "1",
+      "company": "",
+      "message": "",
+      "date": "",
+      "image": "images/archive.jpg",
+      "inbox": "You have no archived messages",
+      "inboximg": "images/archive.jpg",
+      "sinbox": ""
+    }
+  ],
+  "users": [
+    {
+      "title": "inbox",
+      "id": "1"
+    },
+    {
+      "title": "Span",
+      "id": "2"
+    },
+    {
+      "title": "Archive",
+      "id": "3"
+    }
+  ],
+  "notifys": [
+    {
+      "title": "Notification",
+      "notification": "Haven't heard back? You are more more likely to hear back on your application if you follow up with a message.",
+      "time": "1m",
+      "job": "website Developer",
+      "service": "Badinson Security Services",
+      "state": "Lagos",
+      "image": "images/placeholder.svg",
+      "id": "c74d"
+    }
+  ],
+  "qualifys": [
+    {
+      "id": "1",
+      "title":"Most recent work experience",
+      "name": "Computer repair",
+      "email": "Personal"
+    }
+  ],
+  "educations": [
+    {
+      "title": "Education",
+      "titlea": "Common entrance ", 
+      "name":" Primary",
+      "titleb":"Computer engineering" , 
+      "degree":"degree",
+      "titlec":"Secondary school",
+      "level":"O'level",
+      "add":"Add another Education",
+      "text":"",
+      "empty":"",
+      "id": "1"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Skills",
+      "titlea": "Frontend Developer ", 
+      "yeara":" 3 years ",
+      "titleb":"Design" , 
+      "yearb":"2 years",
+      "titlec":"Programming",
+      "yearc":"1 year",
+      "titled":"Teaching",
+      "yeard":"1 year",
+      "add":"Add another Skill",
+      "text":"",
+      "empty":"",
+      "id": "1"
+    }
+  ],
+  "newskills":[{
+    "title":"Ui/Ux Design",
+    "year":"2 years"
+  }],
+  "neweducations":[{
+    "title":"Lesson",
+    "year":"6 months"
+  }],
+
+  "certificates":[
+    {
+      "title": "Frontend Certifications",
+      "name": "Responsive Design",
+      "id": "ca56"
+    }
+  ],
+  "certifications":[
+    {
+      "title": "Certifications",
+      "name": "degree",
+      "id": "ca56"
+    }
+  ],
+  "languages":[
+    {
+      "title": "English",
+      "name": "Fluent",
+      "id": "08c1"
+    }],
+    "newlanguages":[
+      {
+        "title": "Yoruba",
+        "name": "Fluent",
+        "id": "08c1"
+      }],
+  "licences":[
+    {
+      "title": "Student Industrial Training",
+      "from": "2021",
+      "to": "2024",
+      "id": "00c7"
+    }
+  ]
+  ,
+  "newlicences":[
+    {
+      "title": "Add License",
+      "from": "2020",
+      "to": "2024",
+      "id": "00c7"
+    }
+  ]
+  ,
+  "jobtitles":[
+    {
+      "title": "Frontend developer, Graphics design and SEO (Search engine Optimization)",
+      "name": "",
+      "id": "00c7"
+    }
+  ]
+  ,
+  "basepays":[
+    {
+      "amount": "#150,000",
+      "month": "per month",
+      "id": "00c7"
+    }
+  ],
+  "relocations":[
+    {
+      "true": "Yes",
+      "title": "Am willing to relocate",
+      "id": "00c7"
+    }
+  ],
+
+  "jobdetails": [
+    {
+      "title": "Job title",
+      "name": "Job titles Frontend developer, Graphics design and SEO (Search engine Optimization)",
+      "logo": "images/users-r.png",
+      "id": "a1fa"
+    },
+    {
+      "title": "Minimum base pay",
+      "name": "#200,000",
+      "logo": "images/pay-r.png",
+      "id": "11a0"
+    },
+    {
+      "title": "Add Licenses",
+      "name": "",
+      "logo": "images/location-r.png",
+      "id": "e3fb"
+    }
+  ],
+  "pdfs": [
+    {
+      "image": "images/pdf logo.jpg",
+      "name": "Sheriff_Pdf_Cv.pdf",
+      "date": "Added 24 jul 2024",
+      "id": "f587"
+    }
+  ],
+  "details": [
+    {
+      "title": "Hide jobs with these details",
+      "qualify": "Manage the qualifications or preferences used to hide jobs from your search.",
+      "hide": "We’ll try to hide jobs asking for these qualifications or preferences.",
+      "feedback": "When you provide feedback about the jobs shown in your search results and email notifications, you’ll see the details here.",
+      "id": "dd34"
+    }
+  ],
+  "works": [
+    {
+      "title": "Ready to work",
+      "work": "Let employers know that you can begin working right away.",
+      "available": "am available to start immediately",
+      "start": "Let employers know that you're available to start working as soon as possible.",
+      "id": "9b1e"
+    }
+  ],
+  "infos": [
+    {
+      "name": "odukoyasheriff@gmail.com",
+      "number": "07012554154",
+      "location": "Lagos, Nigeria",
+      "id": "b394"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "job": "Frontend Developer (Remote/Hybrid)",
+      "company": "Sotaen - 83compass",
+      "state": "Lagos",
+      "amount": "#200,000 a month",
+      "jobtitle": " Designing the structure of web page.",
+      "description": "About Us - Sotaen represents different organizations and startups.",
+      "posting": "This job posting is on behalf of 83compass.",
+      "maindescription": "83compass.com is an innovative, customer-centric, and value-based software development firm specializing in providing value-added solutions to our clients across various industries.",
+      "descriptions": "The role requires a creative and technical engineer with a keen eye for UI/UX design, frontend development, and integration, and an effective communicator who can elicit information from the backend engineers, project managers, other frontend developers, and stakeholders. An ideal candidate for this role is expected to integrate front-end and server-side technologies and merge the technical architecture with creative designs.",
+      "role": "To be successful in this role, you must have a fundamental understanding of the creative aesthetic while implementing technically across various platforms and frameworks and participate in business development, project planning, and knowledge leadership. Also, you must be prepared to work with a cross-functional team from different time zones.",
+      "doing": " Work closely with a multidisciplinary team (Backend developers, DevOps, QA engineers, Project Managers, Product Owners) oriented to continuous delivery",
+      "doing2": " Work across the entire product life cycle: concept, design, development, deployment, testing, release, support",
+      "doing3": " Construct and verify (unit test) software components to meet design specifications.",
+      "doing4": " Take ownership of your code to be qualitatively high and you will support your colleagues in code reviews",
+      "doing5": " Rapidly fix bugs and solve problems.",
+      "looking": " Understanding fundamental design principles behind a scalable application",
+      "looking2": "Write and test interactive, clean, secure and efficient solutions",
+      "looking3": "Knowledge of responsive design principles and mobile development.",
+      "looking4": "Continuously improve our code base, systems and processes",
+      "looking5": "Keen to learn new technologies and have ideas about how we can make things better",
+      "looking6": "Being passionate, self-driven and working with little supervision towards a common team or company purpose",
+      "looking7": "Excellent communication skills and being able to work independently or in a full team",
+      "looking8": "A professional with +3 years of frontend web experience",
+      "looking9": "Experienced with Javascript - Vue.js, Nuxt js, Typescript, Tailwind, Vue Query, Pinia (State management tool)",
+      "nature": "Remote/Hybrid",
+      "type": "Full-time",
+      "pay": "#200,000.00 per month",
+      "location": "Lagos (preferred)",
+      "deadline": "Application Deadline: 14/08/2024",
+      "image":"images/placeholder.svg"
+    }
+  ],
+  "jobseconds": [
+    {
+      "id": "1",
+      "job": "Mid-Level NodeJS Backend Engineer",
+      "company": "QaceTech Ltd",
+      "state": "Lagos state",
+      "amount": "₦500,000 a month",
+      "jobtitle": " We are hiring mid level NodeJS backend engineers for one of our client in the FinTech sector. The following are the Job and responsibilities.",
+      "description": "",
+      "posting": "",
+      "maindescription": "Experience with performance optimization and load balancing.",
+      "descriptions": "NodeJS: 4 years (Required)",
+      "role": "Understanding of horizontal scaling, clustering, and distributed systems, Proficiency with testing frameworks (Jest)",
+      "doing": " Design, develop, and maintain robust and scalable Node.js applications.",
+      "doing2": " Implement and optimize RESTful APIs.",
+      "doing3": " Collaborate with cross-functional teams to define, design, and ship new features.",
+      "doing4": " Ensure the security, performance, and scalability of the applications.",
+      "doing5": " Mentor junior developers and lead code reviews.",
+      "looking": " Integrate with third-party APIs and payment gateways.",
+      "looking2": "Maintain compliance with fintech regulations and best practices.",
+      "looking3": "4+ years of experience in Node.js development.",
+      "looking4": "Strong proficiency in JavaScript and TypeScript.",
+      "looking5": "Extensive experience with SQL and NoSQL databases.",
+      "looking6": "Familiarity with cloud platforms (AWS and Huawei Cloud).",
+      "looking7": "In-depth knowledge of security best practices in the fintech sector, including data encryption, secure coding practices, and compliance with regulations (e.g., GDPR, PCI-DSS).",
+      "looking8": "Proficient with testing frameworks and CI/CD pipelines.",
+      "looking9": "Excellent problem-solving and communication skills.",
+      "nature": "12 months",
+      "type": "Contract",
+      "pay": "#500,000.00 per month",
+      "location": "Lagos (preferred)",
+      "deadline": "Application Deadline: 4/09/2024",
+      "image":"images/placeholder.svg"
+    }
+  ],
+  "jobthirds": [
+    {
+      "id": "1",
+      "job": "I.T SUPPORT",
+      "company": "Uziben Nigeria Limited",
+      "state": "Lekki",
+      "amount": "₦150,000 - ₦170,000 a month",
+      "jobtitle": "",
+      "description": "Seven: 3 years (Preferred)",
+      "posting": "",
+      "maindescription": "",
+      "descriptions": "",
+      "role": "",
+      "doing": "Resolving technical issues related to hardware, software, and networking.",
+      "doing2": " Maintaining and repairing IT systems.",
+      "doing3": " Installing and configuring hardware and software.",
+      "doing4": " Providing technical support to customers or staff.",
+      "doing5": " Logging bugs and enhancement requests.",
+      "looking": " Keeping up-to-date with industry trends",
+      "looking2": "",
+      "looking3": "",
+      "looking4": "",
+      "looking5": "",
+      "looking6": "",
+      "looking7": "",
+      "looking8": "",
+      "looking9": "",
+      "nature": "",
+      "type": "Full-time",
+      "pay": " ₦150,000.00 - ₦170,000.00 per month",
+      "location": "Lekki (preferred)",
+      "deadline": "Application Deadline: 15/08/2024",
+      "image":"images/placeholder.svg"
+    }
+  ],
+  "jobfours": [
+    {
+      "id": "1",
+      "job": "Web/Mobile Front End Developer",
+      "company": "Tek Experts",
+      "state": "Lagos",
+      "amount": "#200,000 a month",
+      "jobtitle": " Designing the structure of web page.",
+      "description": "TeKnowledge is looking for a Web/Mobile Front End Developer who will be responsible for transforming the product vision into working products and will directly influence how users will interact with the system. In this role, you’ll join a team creating the financial services and banking industry of tomorrow, helping an innovative fintech company that is committed to transforming the retail space in Africa. Based at our clients’ location on Victoria Island, you’ll create cutting-edge user experiences.",
+      "posting": "Leverage your software development skills in the financial services industry",
+      "maindescription": "We’re seeking a diligent developer to develop innovative applications and software. The role will involve working closely with software engineers and web developers to establish and maintain a user-friendly digital presence for the company and to ensure UX standards are upheld in the short and long term. This will be a challenging but rewarding role that requires effective communication and collaboration as well as a keen attention to detail and the ability to learn and adapt to emerging technologies.",
+      "descriptions": "Accelerating Progress. Securing Futures.",
+      "role": "TeKnowledge stands as the transformative catalyst for digital evolution, providing governments and enterprises around the world with unparalleled cybersecurity, advanced technical skilling, and enterprise technical services at scale. Our commitment to technology enablement, security, and advancement positions us uniquely in the market, ensuring our customers are equipped to achieve their strategic imperatives in the digital age with confidence and competitive advantage.",
+      "doing": " Build applications according to the design and provide designers with feedback, suggesting tradeoffs when required",
+      "doing2": " Ensure the code follows latest coding practices and industry standards",
+      "doing3": " Work closely with backend developers to understand and properly use the system’s APIs.",
+      "doing4": " Write both unit and integration tests, and develop automation tools for daily tasks",
+      "doing5": " Challenge ideas and opinions to avoid pitfalls and inefficient solutions.",
+      "looking": " B.Sc. or equivalent degree in Computer Science or related field",
+      "looking2": "4-5 years of experience as a front-end developer building modern applications",
+      "looking3": "Knowledge of Object-Oriented programming.",
+      "looking4": "Ability to write effective unit, integration, and end-user automation tests",
+      "looking5": "Mobile development experience with either native or web-to-native tooling and frameworks",
+      "looking6": "Java, Javascript, Angular, HTML, CSS knowledge, React and Flutter (Native Android) knowledge is also an advantage",
+      "looking7": "Understanding of APIs and how to use them in practice",
+      "looking8": "Strong understanding of Agile methodologies, with experience as a developer on a cross-functional agile team preferred",
+      "looking9": "Strong communication skills with ability to communicate complex technical concepts and align organization on decisions",
+      "nature": "Remote/Hybrid",
+      "type": "Full-time",
+      "pay": "Not specify",
+      "location": "Lagos",
+      "deadline": "Application Deadline: 24/08/2024",
+      "image":"images/placeholder.svg"
+    }
+  ],
+  "emails":[
+    {
+      "email":"odukoyasheriff@gmail.com"
+    }
+  ],
+  "phones":[
+    {
+      "phone":"+234"
+    }
+  ],
+  "check":[{
+    "name":"job seeker (looking for a job)"
+  },
+  {
+    "name":"Employer (hiring, sourcing candidates, or advertising jobs)"
+  }]
+}
