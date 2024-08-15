@@ -38,7 +38,7 @@ const ProfileForm = ({edits}) =>{
     return (
         <form onSubmit={handleSumbit} className="mx-auto">
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={goBack} className='w-6 translate-x-24 cursor-pointer mt-6'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={goBack} className='w-6 translate-x-10 cursor-pointer mt-6'>
         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
         </svg>
             <div>

@@ -18,15 +18,15 @@ const MessageId = ({messages, reply, setReply, replyLists, ReplySubmit}) =>{
 
     return(
 
-        <div className="inline-flex items-center">
+        <div className=" flex flex-row justify-around sm:mx-14 items-center">
             <Copymessage />
-            <div className="bg-gray-100 md:mx-auto md:tramsate-x-20 md:relative md:left-20 md:top-20 rounded-lg lg:relative lg:left-0 lg:top-0 rounded-lg border border-black" style={{width:"450px", height:"535px"}}>
+            <div className="bg-gray-100 md:mx-auto md:tramsate-x-20 sm:w-4/12 w-72 mx-auto mt-4 sm:mx-0  md:relative md:left-20 md:top-20 rounded-lg lg:relative lg:left-0 lg:top-0 rounded-lg border border-black" style={{ height:"535px"}}>
             {
                 <>
                <div className="flex flex-row items-center  bg-white border border-black border-t-0 border-r-0 border-l-0 p-4 rounded-tr-lg rounded-tl-lg justify-between"  >
                 <span className="inline-flex items-center gap-4">
                 <img src={image} alt="icon" />
-                <p className="font-bold text-xl">
+                <p className="font-bold text-sm sm:text-xl">
                 {message.company}
                 </p>
                 </span>
@@ -69,12 +69,12 @@ const MessageId = ({messages, reply, setReply, replyLists, ReplySubmit}) =>{
                 </div>
                 <div>
                     <form>
-                    <textarea cols={55} rows={3} value={reply}
+                    <textarea  value={reply}
                     onChange={(e) =>setReply(e.target.value)}
-                    className=" outline-blue-700 border p-3 border-black border-l-0 border-r-0 border-b-0 "
+                    className=" outline-blue-700 border p-3 border-black w-72 sm:w-96 h-20 border-l-0 border-r-0 border-b-0 "
                     placeholder="Write message"/>
                     <div className="bg-white px-2 h-14 rounded-b-lg -mt-2">
-                    <button onClick={ReplySubmit} className="bg-blue-500 text-white p-2 rounded-lg mt-1">Send</button>
+                    <button onClick={ReplySubmit} className="bg-blue-500 text-white p-2 rounded-lg sm:mt-1 mt-3">Send</button>
                     </div>
                     </form>
                 </div>
@@ -96,7 +96,7 @@ const MessageId = ({messages, reply, setReply, replyLists, ReplySubmit}) =>{
                 <Link to="/" className="text-blue-900 mt-10 underline">view description about the job</Link>
             </div>
         </div>
-        <div className={`w-44 fixed top-40 mb-4 right-96 h-24 bg-white isolate p-4 flex flex-col z-10 rounded-lg border border-black ${hideicon ? "block" : "hidden"}`}>
+        <div className={`w-44 fixed top-32 sm:top-40 mb-4 sm:right-96 right-20 h-24 bg-white isolate p-4 flex flex-col z-10 rounded-lg border border-black ${hideicon ? "block" : "hidden"}`}>
             <p className="inline-flex gap-2 mb-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0-3-3m3 3 3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
 </svg>

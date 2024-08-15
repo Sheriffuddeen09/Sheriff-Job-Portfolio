@@ -8,7 +8,7 @@ const NewLicence = ({newlicences}) =>{
                     return(
                         <>
                      <hr className="my-4"/>
-                     <div className="flex flex-row justify-between flex-wrap gap-60 lg:gap-96">
+                     <div className="flex flex-row justify-between flex-wrap gap-28 lg:gap-96">
                         <span className="inline-flex gap-2 lg:-translate-x-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />

@@ -43,8 +43,8 @@ const JobApplySecond = ({ApplyDeleteSecond, jobseconds}) =>{
                         <p className="text-gray-400 text-sm">{apply.deadline}</p>
                         </span>
                     </span>
-                    <span className="inline-flex gap-8"><p className="rounded-lg w-32 border border-blue-200 text-blue-700 h-8 font-bold text-center p-1">Update Status</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer" onClick={flexhandle}>
+                    <span className="inline-flex translate-x-5 gap-8"><p className="rounded-lg w-32 border border-blue-200 text-blue-700 h-8 font-bold text-center translate-x-5 mt-2 sm:mt-0 p-1">Update Status</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mt-3 sm:mt-0 p-1 cursor-pointer" onClick={flexhandle}>
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
                     </svg>
                     </span>

@@ -18,7 +18,7 @@ body{
   --icon:black;
   --iconb:white;
 }
-
+.menuicon
 [dark-theme="dark"]{
   --body_backtoggle: blue;
   --body_background: white;
@@ -200,7 +200,7 @@ body{
 }
 .menuicon{
   cursor: pointer;
-  translate: 35px;
+  translate: 20px;
   transform: translateY(5px);
 }
 .menuicon:hover{

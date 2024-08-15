@@ -16,7 +16,7 @@ const MessageHome = () =>{
                             
     return (
         <div className="flex flex-row">
-            <div className="bg-gray-100 w-96 flex-col flex items-center m-6 p-4
+            <div className="bg-gray-100 sm:w-72 mx-auto flex-col flex items-center m-6 p-4
             rounded-lg">
                   <MessageList currentUserId ={currentUserId} setCurrentUserId={setCurrentUserId}/>
                 {content}

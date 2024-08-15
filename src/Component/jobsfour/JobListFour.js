@@ -17,7 +17,7 @@ const handleSidebar = () =>{
     <>
   <main className="">
       <section>
-        <div className="w-96 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
+        <div className="sm:w-96 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
         <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon lg:translate-x-10" onClick={handleMenuIcon}>
@@ -27,7 +27,7 @@ const handleSidebar = () =>{
 </span>
         <p>{job.company}</p>
         <p>{job.state}</p>
-        <span className="inline-flex mt-2 gap-8">
+        <span className="flex flex-wrap mt-2 gap-8">
         <p className='bg-white w-44 p-1 text-black font-bold rounded'>{job.amount} </p>
         <p className='bg-white w-30 p-1 text-black rounded font-bold'>{job.type}+</p>
 
@@ -49,7 +49,7 @@ const handleSidebar = () =>{
 
           
         </div>
-          <div className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 l fixed bottom-0 lg:bottom-4 right-10 lg: fixed bottom-16 lg:right-60 lg:-translate-x-80 lg:w-52 ${menuicon ? "block" : "hidden"}`}>
+          <div className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 l fixed bottom-96 lg:bottom-4 right-16 lg: fixed bottom-16 lg:right-60 lg:-translate-x-80 lg:w-52 ${menuicon ? "block" : "hidden"}`}>
           <p className="inline-flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
 </svg>

@@ -32,11 +32,11 @@ const [exit, setExit] = useState(false)
         <div className=' sm:flex sm:flex-row sm:gap-20 sm:items-center sm:justify-around sm:py-4 mx-auto flex mx-14'>
         <div className='sm:px-8 sm:ml-10 py-4'>
          <form onSubmit={handleSumbit}>
-        <span className='inline-flex gap-80'>
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={prevButton} disabled={disablePrev} className={`prevHide translate-x-6 -translate-y-2 ${prevHide}`}>
+        <span className='flex justify-around '>
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={prevButton} disabled={disablePrev} className={`prevHide -translate-y-2 ${prevHide}`}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
 </svg>
-        <p onClick={handleExit} disabled={disablePrev} className={`cursor-pointer text-blue-800 font-bold prevHide translate-x-6 -translate-y-2 ${prevHide}`}> Exit </p>
+        <p onClick={handleExit} disabled={disablePrev} className={`cursor-pointer text-blue-800 font-bold prevHide -translate-y-2 ${prevHide}`}> Exit </p>
         </span>
             <p className='translate-x-6 my-4 text-2xl font-bold w-10/12'> {title[page]} </p>
             <Progress />
@@ -58,10 +58,10 @@ const [exit, setExit] = useState(false)
             
         </div>
     <div  className={`flex flex-col justify-center items-center fixed top-0 left-0 w-96 h-full w-full bg-black opacity-80 exit ${exit ? "block" : "hidden"}`} >
-        <div className='w-4/12 rounded-lg bg-white z-10 isolate exit'>
+        <div className='w-96 rounded-lg bg-white z-10 isolate exit'>
             <span className='inline-flex'>
             <p className='p-4 font-bold text-black text-xl w-96'>Are you sure you want to exit?</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 relative top-4 right-4 cursor-pointer" onClick={handleExit}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 relative top-4 right-8 cursor-pointer" onClick={handleExit}>
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
 

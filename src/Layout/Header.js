@@ -17,10 +17,10 @@ const Header = () =>{
         <>
         <header className="bg-white">
             <section className=" header pb-1 px-6 pt-6 flex justify-between items-center ">
-            <div className="inline-flex gap-8">
+            <div className="flex justify-around">
                 <h1 className="text-3xl font-bold text-blue-700 h1">SheriffPortfolio</h1>
                 <button onClick={handleToggle} 
-                className="text-3xl md:block md:translate-x-72 lg:hidden relative -top-2 -right-40
+                className="text-3xl md:block md:translate-x-72 lg:hidden relative -top-2 -right-20
                  focus:outline-none">
                     &#9776;
                 </button>
@@ -64,13 +64,13 @@ const Header = () =>{
 
         </header>
         <section className={`menu fixed top-0 h-full w-full left-0 block lg:hidden ${toggle ? "block" : "hidden"}`} >
-            <div className="bg-white md:translate-x-40 w-72 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
-                <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed right-6">
+            <div className="bg-white md:translate-x-40 w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
+                <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed left-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 </svg>
 </button>
                 <Link to={'/'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-40">
                  <p className="mt-14 mb-4 font-bold">Home</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-5">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -81,7 +81,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/reviews'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center  gap-20">
                  <p className="mt-4 mb-4 font-bold">Company reviews</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -92,7 +92,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/user'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-40">
                  <p className="mt-4 mb-4 font-bold">Profile</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -103,7 +103,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/job'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-36">
                  <p className="mt-4 mb-4 font-bold">My jobs</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -114,7 +114,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/mes'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-36">
                  <p className="mt-4 mb-4 font-bold">Message</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -125,7 +125,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/account'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-36">
                  <p className="mt-4 mb-4 font-bold">Settings</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -136,7 +136,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/notify'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-28">
                  <p className="mt-4 mb-4 font-bold">Notification</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -147,7 +147,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/help'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-28">
                  <p className="mt-4 mb-4 font-bold">Help Center</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -158,7 +158,7 @@ const Header = () =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/signin'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row items-center gap-36">
                  <p className="mt-4 mb-4 font-bold">Sign Out</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

@@ -15,7 +15,7 @@ const Ready = () =>{
 
     return (
 
-        <div className="flex flex-col justify-center mx-10 items-center mt-6 px-10">
+        <div className="flex flex-col justify-center flex-wrap mx-10 items-center mt-6 px-10">
             <div>
             <button onClick={goBack}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
@@ -35,12 +35,12 @@ const Ready = () =>{
             </p>
             <br />
             <p dark-theme={istoggle ? "dark" : "light"} className="not">Am not available</p>
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex flex-row flex-wrap items-center gap-2">
                 <Link to={'/user'}>
-                    <p className="border w-96 p-2 lg:w-20 rounded-lg text-red-400 font-bold text-center" >Cancel</p>
+                    <p className="border sm:w-96 w-60 p-2 lg:w-20 rounded-lg text-red-400 font-bold text-center" >Cancel</p>
                 </Link>
                 <Link to={'/user'}>
-                    <p className="bg-blue-600 lg:w-20 my-2 w-96 p-2 rounded-lg text-white font-bold text-center" >Save</p>
+                    <p className="bg-blue-600 lg:w-20 my-2 sm:w-96 w-60  p-2 rounded-lg text-white font-bold text-center" >Save</p>
                 </Link>
             </div>
             <footer className="text-center lg:text-start lg:translate-x-20 text-sm mt-6">©2024 Indeed - <span className="underline">Cookies, Privacy and Terms</span></footer>

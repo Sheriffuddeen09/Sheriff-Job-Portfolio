@@ -16,11 +16,11 @@ const Notification = () =>{
             {
                 notifys.map((message) =>{
                     return(
-                            <div className="lg:flex lg:items-center lg:justify-center lg:flex-col">
-                                <h2 className="text-3xl -translate-x-40 font-bold my-4 p-4">{message.title}</h2>
+                            <div className="lg:flex lg:items-center px-4 sm:px-4 lg:justify-center lg:flex-col">
+                                <h2 className="text-3xl text-center sm:-translate-x-40 font-bold my-4 p-4">{message.title}</h2>
                             <Link to={`/mes/${message.id}`}>
-                        <span className="inline-flex gap-4 wrap ">
-                            <span className="inline-flex gap-4 wrap">
+                        <span className="flex flex-row flex-wrap gap-4 ">
+                            <span className="flex flex-wrap flex-row gap-4 wrap">
                                 <img src={message.image} alt="icon"/>
                                 <h2 className="w-96">{message.notification}</h2>
                             </span>
@@ -32,7 +32,7 @@ const Notification = () =>{
                 </span>
                         </span>
                             </Link>
-                            <div className="w-72 border border-black p-2 rounded-lg mt-1 -translate-x-10">
+                            <div className="w-72 border border-black p-2 rounded-lg mt-1 mx-auto mt-6 sm:-translate-x-10">
                                 <p className="font-bold">{message.job}</p>
                                 <p>{message.service}</p>
                                 <p>{message.state}</p>

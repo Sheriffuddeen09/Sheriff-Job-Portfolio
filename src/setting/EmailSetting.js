@@ -34,7 +34,7 @@ const EmailSetting = () =>{
     return (
         
         <section className="p-4 mx-14 inline-flex gap-0">
-            <div className="lg:block hidden bg-gray-100 p-2 -mt-4 -translate-x-16">
+            <div className="lg:block hidden bg-gray-100 p-2 -mt-4 sm:-translate-x-16">
                  <button onClick={handleToggle} 
                 className="text-3xl md:block lg:hidden relative -top-2 -right-40
                  focus:outline-none">
@@ -171,19 +171,19 @@ const EmailSetting = () =>{
                 <hr className="w-lvw -translate-x-4"/>
 </div>
 </section>
-        <div className="ml-20">
+        <div className="sm:ml-20 -ml-6 ">
         <button onClick={handleToggle} 
                 className="text-3xl block lg:hidden relative -top-5
                  focus:outline-none">
                     &#9776;
                 </button>
             <h1 className="font-bold text-2xl">Subscriptions</h1>
-            <hr className="bg-gray-200 my-6 w-96" />
+            <hr className="bg-gray-200 my-6 sm:w-96 w-64" />
           <Link to={'/reviews'}>
-           <span className="flex flex-row gap-20">
+           <span className="flex flex-row items-center flex-wrap gap-4 sm:gap-20">
                 <span>
                     <p className="font-bold ">Job and company alert</p>
-                    <p className="w-96">Emails about new jobs matching your job searches and companies you follow
+                    <p className="sm:w-96 w-52">Emails about new jobs matching your job searches and companies you follow
                     </p>
                 </span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -192,15 +192,15 @@ const EmailSetting = () =>{
 
             </span>
             </Link> 
-            <hr className="bg-gray-200 my-6 w-96" />
-            <h1 className="font-bold text-2xl">Employer and recruiter emails</h1>
-            <hr className="bg-gray-200 my-6 w-96" />
+            <hr className="bg-gray-200 my-6 sm:w-96 w-64" />
+            <h1 className="font-bold text-xl">Employer and recruiter emails</h1>
+            <hr className="bg-gray-200 my-6 w-64" />
 
             <Link to={'/user'}>
-           <span className="flex flex-row gap-20">
+           <span className="flex flex-wrap flex-row gap-20">
                 <span>
                     <p className="font-bold ">Resume contacts</p>
-                    <p className="w-96">Emails about new jobs matching your job searches and companies you follow
+                    <p className="w-52 sm:w-96">Emails about new jobs matching your job searches and companies you follow
                     </p>
                 </span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -209,14 +209,14 @@ const EmailSetting = () =>{
 
             </span>
             </Link> 
-            <p className="inline-flex gap-1 text-sm mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <p className="flex flex-row flex-wrap gap-1 text-sm mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
             </svg>
-            To stop receiving these messages, adjust your<Link to={'/user'}><span className="text-blue-500"> Resume Privacy Settings </span></Link></p>
-            <hr className="bg-gray-200 my-6 w-96" />
+            To stop receiving these messages, adjust your<Link to={'/user'}><span className="mt-3 sm:mt-0 text-blue-500"> Resume Privacy Settings </span></Link></p>
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
             <h1 className="text-2xl font-bold">Additional emails</h1>
-            <hr className="bg-gray-200 my-6 w-96" />
-            <div className="inline-flex justify-between gap-2 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <div className="flex flex-wrap gap-2 items-center my-6">
                 <label htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label">
                     <p className="font-bold">Application and account status</p>
                     <p>Updates on your active job applications and Indeed <br/> account</p>
@@ -226,8 +226,8 @@ const EmailSetting = () =>{
             <label  htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 w-96" />
-            <div className="inline-flex justify-between gap-0 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <div className="flex flex-row flex-wrap gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Recommended jobs</p>
                     <p>Targeted job recommendations based on your resume<br/> and activity</p>
@@ -236,8 +236,8 @@ const EmailSetting = () =>{
             <label  htmlFor="checked" dark-theme={isto ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 w-96" />
-            <div className="inline-flex justify-between gap-2 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <div className="flex flex-row flex-wrap gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Career guidance</p>
                     <p>Messages with career advice, company information, <br/> resume suggestions, and more</p>
@@ -247,27 +247,33 @@ const EmailSetting = () =>{
             <label  htmlFor="checks"  dark-theme={istog ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 w-96" />
-            <div className="inline-flex justify-between gap-8 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <div className="flex flex-row flex-wrap gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
-                    <p className="font-bold">Indeed feedback</p>
-                    <p>Requests from Indeed to provide feedback or <br/>participate in user studies and surveys</p>
+                    <p className="font-bold ">Indeed feedback</p>
+                    <p className="w-52">Requests from Indeed to provide feedback or <br/>participate in user studies and surveys</p>
                 </label>
             <input className="togglebutton" id='checkeds'
             type="checkbox" onChange={handleChec}/>
             <label  htmlFor="checkeds"  dark-theme={istogg ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 w-96" />
-            <div className="border rounded-lg p-5 my-6 w-8/12">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <div className="border rounded-lg p-5 my-6 sm:w-8/12 w-72">
                <h1>Want to get fewer emails from us?</h1>
                <h1 className="text-blue-600 my-4">Unsubscribe from all commerce emails</h1>
-               <p className="w-11/12">Indeed may still send you emails for confirmations and other messages relevant to how you interact with Indeed. You can unsubscribe from job alert, company alert, and daily job feed subscriptions by updating your individual preferences on the Job and company alerts page.</p>
+               <p className="sm:w-11/12 w-64">Indeed may still send you emails for confirmations and other messages relevant to how you interact with Indeed. You can unsubscribe from job alert, company alert, and daily job feed subscriptions by updating your individual preferences on the Job and company alerts page.</p>
             </div>
-            <hr className="bg-gray-200 my-6 w-96" />
+            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
         </div>
+        
         </section>
     )
 }
 
 export default EmailSetting
+
+/*
+
+          
+            */

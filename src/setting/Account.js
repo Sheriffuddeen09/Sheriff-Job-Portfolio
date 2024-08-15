@@ -50,7 +50,7 @@ const Account = ({emails, phones}) =>{
                 emails.map((email) => {
 
                     return (
-                        <div className="flex flex-row justify-between gap-32">
+                        <div className="flex flex-row justify-around sm:justify-betweengap-32">
                             <span className="">
                              <p className="text-blue-700 font-bold">Email</p>
                             <p>{email.email}</p>
@@ -71,13 +71,13 @@ const Account = ({emails, phones}) =>{
                 phones.map((phone) => {
 
                     return (
-                        <div className="flex flex-row justify-between gap-32 my-10">
+                        <div className="flex flex-row justify-around sm:justify-between gap-14 my-10">
                             <span className="">
                              <p className="text-blue-700 font-bold">Phone Number</p>
                             <p>{phone.phone}</p>
                              </span>
 
-                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg p-2">Change Email</button></Link>
+                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg p-2">Change Phone</button></Link>
     
                         </div>
                     )
@@ -228,8 +228,8 @@ const Account = ({emails, phones}) =>{
                     &#9776;
                 </button>
             <p className="font-bold text-2xl">Account settings</p>
-            <hr className="bg-gray-200 my-6 lg:w-96" />
-            <span className="flex flex-row justify-between">
+            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
+            <span className="flex flex-row justify-around sm:justify-between">
                 <span>
                     <p className="font-bold">Account type:</p>
             <p> 
@@ -244,12 +244,12 @@ const Account = ({emails, phones}) =>{
             <button onClick={handleType} className="text-blue-600 border border-blue-600 font-bold rounded-lg p-2">Change Account type</button>
 
             </span>
-            <hr className="bg-gray-200 my-6 lg:w-96" />           
+            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />           
             <span className="">
                 <span>
                     <p>{content}</p>
                 </span>
-            <hr className="bg-gray-200 my-6 lg:w-96" />
+            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
                 <p>{phonecontent}</p>
              </span>
 
@@ -263,9 +263,9 @@ const Account = ({emails, phones}) =>{
                 </div>
             </div>
             <p className="font-bold ">Third-party applications</p>
-            <p>No third-party applications have access to your account</p>
-            <hr className="bg-gray-200 my-6 lg:w-96" />
-            <span className="flex flex-row items-center justify-between">
+            <p className="">No third-party applications have access to your account</p>
+            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
+            <span className="flex flex-row items-center justify-around sm:justify-between">
                 <p>odukoyasheriff@gmail.com</p>
                 <Link to={'/signin'}>
                 <button className="text-blue-600 border-gray-200 rounded-lg p-1 border">
@@ -273,7 +273,7 @@ const Account = ({emails, phones}) =>{
                 </button>
                 </Link>
             </span>
-            <hr className="bg-gray-200 my-6 lg:w-96" />
+            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
 
         </div>
 </section>

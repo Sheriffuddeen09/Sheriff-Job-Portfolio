@@ -17,7 +17,7 @@ const Help = () =>{
             </div>
         </div>
         <div className="bg-gray-200 p-4 w-full">
-        <div className="inline-flex gap-8 ">
+        <div className="flex flex-row px-3 flex-wrap gap-8 ">
             <div>
                 <h1 className="my-4 text-2xl font-bold">We're here to help</h1>
                 <h1>Visit our Help Center for answers to common questions or contact us directly.</h1>

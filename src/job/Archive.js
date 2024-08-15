@@ -160,7 +160,7 @@ Review before proceeding</p>
     )
     return (
 
-        <div>
+        <div className="-ml-14">
             {content}
         </div>
     )

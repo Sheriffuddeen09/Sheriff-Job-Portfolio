@@ -2,7 +2,7 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon, WhatsappIcon } from "react-sha
 const Footer = () =>{
 
     return (
-        <div className="inline-flex px-4 py-1 items-center gap-6">
+        <div className="flex flex-row flex-wrap mt-40 justify-center text-center mx-auto px-4 py-1 items-center gap-6">
             <p>
                 &copy; 2024SheriffPortifolio
             </p>

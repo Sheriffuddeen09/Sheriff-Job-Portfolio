@@ -33,13 +33,13 @@ const MessageItem = ({currentUserId}) =>{
             {
                 messages.map((message) =>(
 
-                    <Link to={`/mes/${message.id}`}><div className="border bg-white w-80 p-4 ">
-                        <span className="flex flex-row flex-wrap gap-4">
+                    <Link to={`/mes/${message.id}`}><div className="border bg-white sm:w-80 w-64 p-4 ">
+                        <span className="flex flex-row flex-wrap sm:gap-4 gap-2">
 
                             <img src={message.image} alt="message" />
                             <span>
-                                <span className="inline-flex gap-12">
-                            <p> { 
+                                <span className="inline-flex text-sm gap-2 sm:gap-12">
+                            <p className="text-sm"> { 
                                 (message.company).length <= 10 ?
                                 message.company : `${(message.company).slice(0, 16)}...`
                                 
@@ -69,7 +69,7 @@ const MessageItem = ({currentUserId}) =>{
      return (
 
         <div className="">
-        <div  style={{height:'440px'}} className="bg-gray-50 w-96 flex-col flex items-center m-0 p-4
+        <div  style={{height:'440px'}} className="bg-gray-50 w-72 sm:w-96 flex-col flex items-center m-0 p-4
         rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white">
 
            { content}

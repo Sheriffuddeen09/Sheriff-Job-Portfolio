@@ -28,16 +28,16 @@ const ElementJob = ({jobseconds, applys, ApplyDelete, ApplyDeleteSecond}) => {
             <h1 className="font-bold text-4xl my-6">My Jobs</h1>
             <div>
         <ul className="flex flex-row gap-10 ">
-            <li onClick={() => handleToggle(1)} className={toggle === 1 ? "selectedjob" : 'li'}>
+            <li onClick={() => handleToggle(1)} className={`hidden sm:block${toggle === 1 ? "selectedjob" : 'li'}`}>
                 Saved (0)
             <div  className={toggle === 1 ? "jobselected" : 'li'}> </div>
             </li >
             <li onClick={() => handleToggle(2)} className={toggle === 2 ? "selectedjob" : 'li'}>
-                Applied (2)
+                Applied(2)
             <div  className={toggle === 2 ? "jobselectedee" : 'li'}> </div>
 
             </li >
-            <li onClick={() => handleToggle(3)} className={toggle === 3 ? "selectedjob" : 'li'}>
+            <li onClick={() => handleToggle(3)} className={`hidden sm:block ${toggle === 3 ? "selectedjob" : 'li'}`}>
                 Interview (0)
             <div  className={toggle === 3 ? "jobselectede" : 'li'}> </div>
 

@@ -97,7 +97,7 @@ const Device = () => {
         </div>
         <section className={`menu fixed top-0 h-full w-full left-0 sm:hidden ${toggle ? "block" : "hidden"}`} >
             <div className="bg-white translate w-72 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
-                <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed right-6">
+                <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed left-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 </svg>
 </button>
@@ -149,53 +149,53 @@ const Device = () => {
 </section>
         <div>
         <button onClick={handleToggle} 
-                className="text-3xl block sm:hidden relative -top-3
+                className="text-3xl block sm:hidden -left-10 relative -top-3
                  focus:outline-none">
                     &#9776;
                 </button>
         </div>
 
-        <div className="-ml-10">
+        <div className="-ml-16 sm:-ml-0">
           <h1 className="font-bold text-xl mt-10">Device management</h1>
-          <hr className="bg-gray-200 my-6 lg:w-96" />
+          <hr className="bg-gray-200 my-6 w-60 mx-auto sm:mx-0 lg:w-96" />
         <p>You are currently signed into your Indeed account on these devices.</p>
         <div className="inline-flex mt-6 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
-            <h1 className="font-bold mb-6 mt-2 p-1 px-4">Device</h1>
+            <h1 className="font-bold mb-6 mt-2 p-1 px-2">Device</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Date Logged In</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Date Logged In</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">IP Address</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">IP Address</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Action</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Action</h1>
           </div>
           <div>
-            <h1 className="mb-2 mt- p-1 px-4">Chrome <br/> Windows</h1>
+            <h1 className="mb-2 mt- p-1 px-2">Chrome <br/> Windows</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">June 29,2024</h1>
+            <h1 className="mb-2 mt- p-1 px-2">June 29,2024</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">197.211.58213 <br/> Lagos</h1>
+            <h1 className="mb-2 mt- p-1 px-2">197.211.58213 <br/> Lagos</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">This device</h1>
+            <h1 className="mb-2 mt- p-1 px-2">This device</h1>
           </div>
         </div>
 
-        <div className="inline-flex mt-6 rounded-lg border">
+        <div className="inline-flex mt-6 sm:translate-x-5 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
-            <h1 className="font-bold mb-6 mt-3 p-1 px-4">Device</h1>
+            <h1 className="font-bold mb-6 mt-3 p-1 px-2">Device</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Date Logged In</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Date Logged In</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">IP Address</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">IP Address</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Action</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Action</h1>
           </div>
           <div>
-            <h1 className="mb-2 mt- p-1 px-4">Chrome <br/> Andriod</h1>
+            <h1 className="mb-2 mt- p-1 px-2">Chrome <br/> Andriod</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">April 18,2024</h1>
+            <h1 className="mb-2 mt- p-1 px-2">April 18,2024</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">129.205.124.165 <br/> Lagos</h1>
+            <h1 className="mb-2 mt- p-1 px-2">129.205.124.165 <br/> Lagos</h1>
             <hr />
             <Link to={'/signin'}><h1 className="mb-2 border rounded-lg mt-1 p-1 text-center font-bold text-blue-700 w-20 mx-auto">Sign out</h1></Link>
           </div>
@@ -203,20 +203,41 @@ const Device = () => {
 
         <div className="inline-flex mt-6 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
-            <h1 className="font-bold mb-6 mt-2 p-1 px-4">Device</h1>
+            <h1 className="font-bold mb-6 mt-2 p-1 px-2">Device</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Date Logged In</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Date Logged In</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">IP Address</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">IP Address</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Action</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Action</h1>
           </div>
           <div>
-            <h1 className="mb-2 mt- p-1 px-4">Chrome <br/> Andriod</h1>
+            <h1 className="mb-2 mt- p-1 px-2">Chrome <br/> Andriod</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">January 29,2024</h1>
+            <h1 className="mb-2 mt- p-1 px-2">January 29,2024</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">197.211.58.219 <br/> Lagos</h1>
+            <h1 className="mb-2 mt- p-1 px-2">197.211.58.219 <br/> Lagos</h1>
+            <hr />
+            <Link to={'/signin'}><h1 className="mb-2 border rounded-lg mt-1 p-1 text-center font-bold text-blue-700 w-20 mx-auto">Sign out</h1></Link>
+          </div>
+        </div>
+
+        <div className="inline-flex mt-6 sm:translate-x-5 rounded-lg border">
+          <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
+            <h1 className="font-bold mb-6 mt-2 p-1 px-2">Device</h1>
+            <hr />
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Date Logged In</h1>
+            <hr />
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">IP Address</h1>
+            <hr />
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Action</h1>
+          </div>
+          <div>
+            <h1 className="mb-2 mt- p-1 px-2">Chrome <br/> Windows</h1>
+            <hr />
+            <h1 className="mb-2 mt- p-1 px-2">November 19,2023</h1>
+            <hr />
+            <h1 className="mb-2 mt- p-1 px-2">197.211.59.154 <br/> Lagos</h1>
             <hr />
             <Link to={'/signin'}><h1 className="mb-2 border rounded-lg mt-1 p-1 text-center font-bold text-blue-700 w-20 mx-auto">Sign out</h1></Link>
           </div>
@@ -224,41 +245,20 @@ const Device = () => {
 
         <div className="inline-flex mt-6 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
-            <h1 className="font-bold mb-6 mt-2 p-1 px-4">Device</h1>
+            <h1 className="font-bold mb-36 mt-2 p-1 sm:px-14 px-5">Device</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Date Logged In</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Date Logged In</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">IP Address</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">IP Address</h1>
             <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Action</h1>
+            <h1 className="font-bold mb-2 mt-2 p-1 px-2">Action</h1>
           </div>
           <div>
-            <h1 className="mb-2 mt- p-1 px-4">Chrome <br/> Windows</h1>
+            <h1 className="mb-2 mt- py-1 px-1 sm:px-2">Mozilla/5.0 (Linux; U; Android 11; en-ng; TECNO BE6 Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36 PHX/12.5Android</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">November 19,2023</h1>
+            <h1 className="mb-2 mt- p-1 px-2">June 29,2024</h1>
             <hr />
-            <h1 className="mb-2 mt- p-1 px-4">197.211.59.154 <br/> Lagos</h1>
-            <hr />
-            <Link to={'/signin'}><h1 className="mb-2 border rounded-lg mt-1 p-1 text-center font-bold text-blue-700 w-20 mx-auto">Sign out</h1></Link>
-          </div>
-        </div>
-
-        <div className="inline-flex mt-6 rounded-lg border">
-          <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
-            <h1 className="font-bold mb-36 mt-2 p-1 px-14">Device</h1>
-            <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Date Logged In</h1>
-            <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">IP Address</h1>
-            <hr />
-            <h1 className="font-bold mb-2 mt-2 p-1 px-4">Action</h1>
-          </div>
-          <div>
-            <h1 className="mb-2 mt- p-1 px-4">Mozilla/5.0 (Linux; U; Android 11; en-ng; TECNO BE6 Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36 PHX/12.5Android</h1>
-            <hr />
-            <h1 className="mb-2 mt- p-1 px-4">June 29,2024</h1>
-            <hr />
-            <h1 className="mb-2 mt- p-1 px-4">197.211.58213 <br/> Lagos</h1>
+            <h1 className="mb-2 mt- p-1 px-2">197.211.58213 <br/> Lagos</h1>
             <hr />
             <Link to={'/signin'}><h1 className="mb-2 border rounded-lg mt-1 p-1 text-center font-bold text-blue-700 w-20 mx-auto">Sign out</h1></Link>
           </div>

@@ -37,15 +37,15 @@ const JobApply = ({ApplyDelete, applys, jobseconds, ApplyDeleteSecond}) =>{
                     <span className="flex flex-row gap-4">
                         <img src={apply.image} width={70} alt="imagelogo" className="-translate-y-10"/>
                         <span>
-                        <p className="bg-red-50 text-red-600 lg:w-60 w-32 mb-1 text-center rounded-lg p-1 text-sm font-bold ">Not selected by am employer</p>
+                        <p className="bg-red-50 text-red-600 lg:w-60 sm:w-32 mb-1 w-52 text-center rounded-lg p-1 text-sm font-bold ">Not selected by am employer</p>
                         <p className="font-bold mb-1">{apply.job}</p> 
                         <p>{apply.company}</p>
                         <p>{apply.state}</p>
                         <p className="text-gray-400 text-sm">{apply.deadline}</p>
                         </span>
                     </span>
-                    <span className="inline-flex gap-8"><p className="rounded-lg w-32 border border-blue-200 text-blue-700 h-8 font-bold text-center p-1">Update Status</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer" onClick={flexhandle}>
+                    <span className="inline-flex translate-x-12 gap-8"><p className="rounded-lg w-32 border mt-2 sm:mt-0 border-blue-200 text-blue-700 h-8 translate-x-0 font-bold text-center p-1">Update Status</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mt-3 sm:mt-0 cursor-pointer" onClick={flexhandle}>
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
                     </svg>
                     </span>
@@ -158,12 +158,12 @@ Review before proceeding</p>
     )
     return (
 
-        <div>
-            <p className="font-bold mt-10 mx-48">Last 14 days</p>
+        <div className="-ml-14">
+            <p className="font-bold mt-10 sm:mx-48">Last 14 days</p>
             <hr className="my-4"/>
             {content}
         
-        <p className="font-bold mx-48">Older</p>
+        <p className="font-bold sm:mx-48">Older</p>
         <hr className="my-4 w-11/12"/>
 
             <JobApplySecond jobseconds={jobseconds} ApplyDeleteSecond={ApplyDeleteSecond} />

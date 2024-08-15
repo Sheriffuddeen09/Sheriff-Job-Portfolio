@@ -4,12 +4,12 @@ const Bill = () =>{
     const {data, handleChange} = useFormContext()
 
     return (
-        <section>
+        <section className="ml-10 sm:ml-0">
             <div>
             <div className="">
-            <span className="span1">
-                <label className="label1">FirstName </label>
-                <input className="input2"
+            <span className="flex flex-col p-3">
+                <label className="">FirstName </label>
+                <input className="p-2 border-2 border-blue-400 rounded-lg mt-2"
             type='text' placeholder="Firstname"
              value={data.billFirstName}
              pattern="([A-Z])[\w+.]{1,}"
@@ -17,9 +17,9 @@ const Bill = () =>{
             name="billFirstName"
              />
             </span>
-            <span className="span1">
-            <label className="label2">LastName </label>
-            <input className="input2"
+            <span className="flex flex-col p-3">
+            <label className="">LastName </label>
+            <input className="p-2 border-2 border-blue-400 rounded-lg mt-2"
             type='text' placeholder="Lastname"
             pattern="([A-Z])[\w+.]{1,}"
              value={data.billLastName}
@@ -28,9 +28,9 @@ const Bill = () =>{
              />
             </span>
             </div>
-            <div>
-                <p className="label1">Email</p>
-            <input className="input3"
+            <div className="flex flex-col p-3">
+                <p className="">Email</p>
+            <input className="p-2 border-2 border-blue-400 rounded-lg mt-2"
             type='text' placeholder="@mail.com"
              value={data.Email}
             onChange={handleChange}
@@ -39,23 +39,23 @@ const Bill = () =>{
              />
             </div>
             </div>
-            <div>
-            <p className="label1">City,State <span className="text-sm">(optional)</span></p>
-            <input className="input3"
+            <div className="flex flex-col p-3">
+            <p className="">City,State <span className="text-sm">(optional)</span></p>
+            <input className="p-2 border-2 border-blue-400 rounded-lg mt-2"
             type='text' placeholder="Company name"
              value={data.cityState}
-             name="companyName"
+             name="cityState"
              pattern="([A-Z])[\w\s.]{1,}"
             onChange={handleChange}
              />
             </div>
-            <div className="div1">
-            <span className="span1">
-                <p className="label1">Country <span className="text-sm">(optional)</span></p>
-            <select className="input3"
+            <div className="">
+            <span className="flex flex-col p-3">
+                <p className="">Country <span className="text-sm">(optional)</span></p>
+            <select className="p-2 border-2 border-blue-400 rounded-lg mt-2"
             type='text'
              value={data.country}
-            name='companyAddress'
+            name='country'
             onChange={handleChange}>
                 <option value=''></option>
                 <option value='nig'>Nigeria</option>
@@ -71,9 +71,9 @@ const Bill = () =>{
                 <option value='usa'>Argentina</option>
             </select>
             </span>
-            <span>
-            <p className="label1"> Phone Number <span className="text-sm">(optional)</span></p>
-            <input className="input3"
+            <span className="flex flex-col p-3">
+            <p className=""> Phone Number <span className="text-sm">(optional)</span></p>
+            <input className="p-2 border-2 border-blue-400 rounded-lg mt-2"
             type='text' placeholder="+234"
              value={data.phoneNumber}
              name="phoneNumber"
