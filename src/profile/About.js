@@ -106,10 +106,10 @@ const About = () =>{
     return (
 
         <div className="flex flex-col justify-center items-center mt-8">
-            <div className="inline-flex gap-4 items-center justify-center wrap">
+            <div className="inline-flex gap-4 items-center sm:justify-center justify-around wrap">
                 <span className="w-10/12">
                 <h1 className="text-xl sm:text-4xl font-bold">FRONTEND DEVELOPER </h1>
-                <h1 className="text-xl sm:text-4xl font-bold ">ODUKOYA SHERIFF OLAWALE </h1>
+                <h1 className="text-sm sm:text-4xl font-bold ">ODUKOYA SHERIFF OLAWALE </h1>
                 </span>
                 <div className="text-4xl font-bold bg-gray-600 w-14 text-center flex items-center justify-center rounded-full h-14">FO</div>
             </div>
@@ -141,7 +141,7 @@ const About = () =>{
             <h2 className="font-bold ml-6 lg:mr-72 gap-4 -translate-x-10 text-xl ">Job preferences</h2>
             <p className="text-sm -translate-x-4 w-60">Save specific details like minimum desired pay and schedule.</p>
             </span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 translate-x-8">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 translate-x-4">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
 
