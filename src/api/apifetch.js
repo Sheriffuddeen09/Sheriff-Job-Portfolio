@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiFetchs = axios.create({
-    baseURL: 'http://localhost:3500'
+    baseURL: 'http://localhost:3400'
 })
 
 export const getJobs = async () =>{

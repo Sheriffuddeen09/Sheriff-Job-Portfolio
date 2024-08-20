@@ -62,6 +62,7 @@ import Device from './setting/Device'
 import Account from './setting/Account'
 import Help from './Layout/Help'
 import Footer from './Layout/Footer'
+import SkeletonPost from './skeleton/SkeletonPost'
 const App = () =>{
     const [messages, setMessages] = useState([])
     const [replyLists, setReplyLists] = useState(replys)
@@ -504,7 +505,7 @@ const ReplyAdd = (title) =>{
       
 
 
-/*
+
     const [isloading, setIsLoading] = useState(false)
     useEffect(()=>{
     
@@ -515,10 +516,11 @@ const ReplyAdd = (title) =>{
         }, 6000)
     }, [])
 
-    */
+    
     return(
         <div>
         <Header/>
+        {isloading ? <SkeletonPost/> :
     <Routes>
     <Route path='/'
        element={<Home searchResults={searchResults} 
@@ -724,10 +726,9 @@ const ReplyAdd = (title) =>{
         <Route path='/ready' element={<Ready />} />
         <Route path='/help' element={<Help />} />
         </Routes>
+        }
         <Footer />
-        
         </div>
-        
     )
 }
 export default App

@@ -16,9 +16,9 @@ const Header = () =>{
     return (
         <>
         <header className="bg-white">
-            <section className=" header pb-1 px-6 pt-6 flex justify-between items-center ">
-            <div className="flex justify-around">
-                <h1 className="text-3xl font-bold text-blue-700 h1">SheriffPortfolio</h1>
+            <section className=" header pb-1 px-6 pt-6 flex gap-2 justify-between items-center ">
+            <div className="flex gap-4 justify-around">
+                <h1 className="text-3xl font-bold text-blue-700  h1">SheriffPortfolio</h1>
                 <button onClick={handleToggle} 
                 className="text-3xl md:block md:translate-x-72 lg:hidden relative -top-2 -right-8
                  focus:outline-none">

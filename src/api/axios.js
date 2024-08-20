@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiFetch = axios.create({
-    baseURL: 'http://localhost:3500'
+    baseURL: 'http://localhost:3400'
 })
 
 export const getPosts = async () =>{
