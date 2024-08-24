@@ -37,7 +37,7 @@ let content
    
     else{
         content = <div >
-        <select name="select" id="option" className="sm:w-72 w-64 outline-blue-800 border mb-4 border-black rounded-lg p-1"
+        <select name="select" id="option" className="sm:w-66 w-64 outline-blue-800 border mb-4 border-black rounded-lg p-1"
         value={currentUserId} onChange={handleChange}
         >
             {options}
@@ -48,7 +48,7 @@ let content
     return (
 
         <div>
-               <p className="mb-6 text-xl font-bold">Messages</p> 
+               <p className="mb-6 text-xl font-bold sm:p-2 ">Messages</p> 
                 {content}
         </div>
     )

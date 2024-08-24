@@ -11,11 +11,16 @@ const ViewJob = ({jobs}) =>{
         setTimeout(() =>{
         
         setIsLoading(false)
-        }, 6000)
+        }, 8000)
     }, [])
 
     return (
         <div>
+          {isloading ? <div className='flex flex-col items-center justify-center my-56'>
+                    <h1 className='text-blue-600 text-2xl font-bold mb-2'>Apply</h1>
+                    <div className='bg-gray-300 w-40 h-1 rounded-3xl'><p className='load'></p></div>
+                    </div> :
+          <div>
             {
                 jobs.map((job) =>(
                     <main className="w-full h-full 
@@ -151,8 +156,12 @@ const ViewJob = ({jobs}) =>{
     </div>
                 </main>
                 ))
+                
             }
-
+        </div>
+            
+          }
+            
         </div>
     )
 }

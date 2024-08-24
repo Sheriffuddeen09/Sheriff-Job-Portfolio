@@ -49,7 +49,7 @@ const handleSidebar = () =>{
 
           
         </div>
-          <div className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 l fixed bottom-96 lg:bottom-4 right-16 lg: fixed bottom-16 lg:right-60 lg:-translate-x-80 lg:w-52 ${menuicon ? "block" : "hidden"}`}>
+          <div onClick={handleMenuIcon} className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 l fixed bottom-96 lg:bottom-4 right-16 lg: fixed bottom-16 lg:right-60 lg:-translate-x-80 lg:w-52 ${menuicon ? "block" : "hidden"}`}>
           <p className="inline-flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
 </svg>

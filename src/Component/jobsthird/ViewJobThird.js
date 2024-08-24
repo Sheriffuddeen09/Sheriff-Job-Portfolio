@@ -1,11 +1,27 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 
 const ViewJobThird = ({jobthirds}) =>{
 
-    return (
+  const [isloading, setIsLoading] = useState(false)
+  useEffect(()=>{
+  
+      setIsLoading(true)
+      setTimeout(() =>{
+      
+      setIsLoading(false)
+      }, 8000)
+  }, [])
+
+  return (
+      <div>
+        {isloading ? <div className='flex flex-col items-center justify-center my-56'>
+                    <h1 className='text-blue-600 text-2xl font-bold mb-2'>Apply</h1>
+                    <div className='bg-gray-300 w-40 h-1 rounded-3xl'><p className='load'></p></div>
+                    </div> :
         <div>
-            {
+          {
                 jobthirds.map((job) =>(
                     <main className="w-full h-full 
                     md:w-11/12 
@@ -141,7 +157,8 @@ const ViewJobThird = ({jobthirds}) =>{
                 </main>
                 ))
             }
-
+            </div>
+        }
         </div>
     )
 }

@@ -20,7 +20,7 @@ const MessageId = ({messages, reply, setReply, replyLists, ReplySubmit}) =>{
 
         <div className=" flex flex-row justify-around sm:mx-14 items-center">
             <Copymessage />
-            <div className="bg-gray-100 md:mx-auto md:tramsate-x-20 sm:w-4/12 w-72 mx-auto mt-4 sm:mx-0  md:relative md:left-20 md:top-20 rounded-lg lg:relative lg:left-0 lg:top-0 rounded-lg border border-black" style={{ height:"535px"}}>
+            <div className="bg-gray-100 -translate-x-4 md:mx-auto md:tramsate-x-20 sm:w-4/12 w-72 mx-auto mt-4 sm:mx-0  md:relative md:left-20 md:top-20 rounded-lg lg:relative lg:left-0 lg:top-0 rounded-lg border border-black" style={{ height:"535px"}}>
             {
                 <>
                <div className="flex flex-row items-center  bg-white border border-black border-t-0 border-r-0 border-l-0 p-4 rounded-tr-lg rounded-tl-lg justify-between"  >

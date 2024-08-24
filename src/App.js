@@ -62,7 +62,6 @@ import Device from './setting/Device'
 import Account from './setting/Account'
 import Help from './Layout/Help'
 import Footer from './Layout/Footer'
-import SkeletonPost from './skeleton/SkeletonPost'
 const App = () =>{
     const [messages, setMessages] = useState([])
     const [replyLists, setReplyLists] = useState(replys)
@@ -513,14 +512,17 @@ const ReplyAdd = (title) =>{
         setTimeout(() =>{
         
         setIsLoading(false)
-        }, 6000)
+        }, 8000)
     }, [])
 
     
     return(
         <div>
         <Header/>
-        {isloading ? <SkeletonPost/> :
+        {isloading ? <div className='flex flex-col items-center justify-center my-56'>
+                    <h1 className='text-blue-600 text-2xl font-bold mb-2'>SheriffPortfolio</h1>
+                    <div className='bg-gray-300 w-40 h-1 rounded-3xl'><p className='load'></p></div>
+                    </div> :
     <Routes>
     <Route path='/'
        element={<Home searchResults={searchResults} 

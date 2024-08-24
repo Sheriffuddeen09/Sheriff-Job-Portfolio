@@ -67,7 +67,7 @@ body{
   position: relative;
   top: 15px;
 }
-.home:hover{
+/*.home:hover{
   background-color: rgb(188, 214, 243);
   top: 5px;
   border: solid rgb(151, 178, 224);
@@ -130,6 +130,7 @@ body{
   display: flex;
   align-items: center;
 }
+  */
 .h1{
   transform: translateY(-10px);
 }
@@ -450,4 +451,24 @@ body{
 }
 .togglebutton:checked + label::after{
   transform: translateX(125%);
+}
+
+.load{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: green;
+  border: 2px solid rgb(41, 28, 223);
+  animation: rotat 2s ease-in-out infinite;
+}
+@keyframes rotat {
+
+  from {
+    transform: translateX(0px);
+  }
+
+  to{
+    transform: translateX(60px);
+  }
 }

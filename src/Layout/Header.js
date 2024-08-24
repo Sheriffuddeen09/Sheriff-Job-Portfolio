@@ -48,7 +48,7 @@ const Header = () =>{
 </p>
 <div className={`'background' ${homepage === '/notify' ? 'pri' : 'background'}`}></div>
 </Link>
-  <p onClick={handleProfile} to={'/user'}className='primary'><p ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 " onClick={handleProfile}>
+  <p onClick={handleProfile} to={'/user'}className='primary'><p ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 cursor-pointer" onClick={handleProfile}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
 </svg>
 </p> 
@@ -63,8 +63,8 @@ const Header = () =>{
             </section>
 
         </header>
-        <section className={`menu fixed top-0 h-full w-full left-0 block lg:hidden ${toggle ? "block" : "hidden"}`} >
-            <div className="bg-white md:translate-x-40 w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
+        <section  className={`menu fixed top-0 h-full w-full left-0 block lg:hidden ${toggle ? "block" : "hidden"}`} >
+            <div onClick={handleToggle} className="bg-white md:translate-x-40 w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
                 <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed left-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 </svg>
@@ -170,7 +170,7 @@ const Header = () =>{
                 <hr className="w-lvw -translate-x-4"/>
             </div>
         </section>
-        <div className={`z-10 fixed top-16 right-20 flex flex-col ${prof ? "block" : "hidden"}`}>
+        <div onClick={handleProfile} className={`z-10 fixed top-16 right-20 flex flex-col ${prof ? "block" : "hidden"}`}>
               <div className={`flex flex-col bg-white border rounded-lg w-72 p-4 shadow-lg ${prof ? "block" : "hidden"}`}>
                 <p className="font-bold my-4">odukoyasheriff@gmail.com</p>
                 <Link to={'/user'}>

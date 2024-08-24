@@ -28,8 +28,8 @@ const ElementAll = ({setCompanySearchResults, companys, companySearchResults}) =
             <h1 className="mt-14 font-bold text-4xl">Find great places to work</h1>
             <h1 className="text-2xl mt-6">Get access to millions of company reviews</h1>
             <p className="font-bold mt-6">Company name or job title</p>
-            <span className="flex mx-auto flex-row flex-wrap mb-10 mt-1 gap-2">
-                <input type="text" onChange={handleChange} className="border w-72 border-black border-1 md:w-96 lg:w-8/12 rounded-lg p-1"/>
+            <span className="flex mx-auto lg:inline-flex md:flex-wrap sm:-translate-y-8 lg:flex-nowrap flex-row mb-10 mt-1 gap-2">
+                <input type="text" onChange={handleChange} className="border w-72 border-black border-1 md:w-96 lg:w-11/12 rounded-lg p-1"/>
                 <button className="w-72 rounded-lg bg-blue-800 text-white p-1">Find Companies</button>
             </span>
             </span>

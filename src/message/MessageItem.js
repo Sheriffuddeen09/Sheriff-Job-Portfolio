@@ -1,7 +1,6 @@
 import { postUrlPosts, postsUrlEndpoint as postsCacheKey } from "../api/axiosPost";
 import useSWR from "swr";
 import SkeletonPost from "../skeleton/SkeletonPost";
-import Onlymessage from "./Onlymessage";
 import { Link } from "react-router-dom";
 const MessageItem = ({currentUserId}) =>{
 
@@ -68,15 +67,12 @@ const MessageItem = ({currentUserId}) =>{
    
      return (
 
-        <div className="">
+        <div className=" flex flex-row justify-end">
         <div  style={{height:'440px'}} className="bg-gray-50 w-72 sm:w-96 flex-col flex items-center m-0 p-4
         rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white">
 
            { content}
 
-        </div>
-        <div className="fixed p-4 top-20 right-24 rounded-lg mx-auto hidden lg:block w-7/12 bg-gray-100">
-            <Onlymessage currentUserId={currentUserId}/>
         </div>
         </div>
     )

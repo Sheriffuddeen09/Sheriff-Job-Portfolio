@@ -15,7 +15,7 @@ const Ready = () =>{
 
     return (
 
-        <div className="flex flex-col justify-center flex-wrap mx-10 items-center mt-6 px-10">
+        <div className="flex flex-col justify-center flex-wrap mx-10 items-center mt-6 sm:px-10 -translate-x-5 sm:-translate-x-0">
             <div>
             <button onClick={goBack}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
@@ -24,7 +24,7 @@ const Ready = () =>{
         </button>
             <h1 className="font-bold text-2xl mb-2">Ready to work</h1>
             <p>Let employers know that you can begin working right away.</p>
-            <div className="inline-flex gap-2 items-center my-6 -translate-x-4">
+            <div className="inline-flex gap-4 items-center my-6 -translate-x-4">
             <input className="toggle" id='check'
             type="checkbox" onChange={handleChecked}/>
             <label htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label"> I'm available to start immediately</label>
