@@ -13,3 +13,8 @@ export const postUrlPosts = async (url, userId) =>{
     return response.data
 
 }
+
+export const postUrl = async () =>{
+    const response = await api.get("/posts")
+    return response.data 
+}
