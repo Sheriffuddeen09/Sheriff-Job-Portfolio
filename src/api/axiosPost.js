@@ -1,13 +1,9 @@
 import axios from "axios"
 
-const baseURL =
-    process.env.NODE_ENV === "development"
-        ? "http://localhost:3400"
-        : process.env.REACT_APP_BASE_URL;
-
-    const apiFetchs = axios.create({
-    baseURL,
+const api = axios.create({
+    baseURL:"https://blog-server-fi2x.onrender.com"
     });
+
 
 const delay = () => new Promise((res) => setTimeout(() => res(), 2800))
 
