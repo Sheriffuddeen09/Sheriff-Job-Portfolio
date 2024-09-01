@@ -1,8 +1,14 @@
 import axios from "axios"
 
-export const api = axios.create({
-    baseURL: 'http://localhost:3400/'
-})
+const baseURL =
+    process.env.NODE_ENV === "development"
+        ? "http://localhost:3400"
+        : process.env.REACT_APP_BASE_URL;
+
+    const apiFetchs = axios.create({
+    baseURL,
+    });
+
 const delay = () => new Promise((res) => setTimeout(() => res(), 2800))
 
 export const postsUrlEndpoint = '/posts'

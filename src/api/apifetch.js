@@ -1,8 +1,13 @@
 import axios from "axios";
 
-const apiFetchs = axios.create({
-    baseURL: 'http://localhost:3400'
-})
+const baseURL =
+    process.env.NODE_ENV === "development"
+        ? "http://localhost:3400"
+        : process.env.REACT_APP_BASE_URL;
+
+    const apiFetchs = axios.create({
+    baseURL,
+    });
 
 export const getJobs = async () =>{
     const response = await apiFetchs.get("/jobs")
