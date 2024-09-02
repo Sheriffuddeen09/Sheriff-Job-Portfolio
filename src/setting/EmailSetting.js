@@ -120,8 +120,8 @@ const EmailSetting = () =>{
         </ul>
         </div>
         <section className={`menu fixed top-0 h-full w-full left-0 block lg:hidden ${toggle ? "block" : "hidden"}`} >
-            <div className="bg-white translate w-72 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
-                <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" onClick={handleToggle} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed right-6">
+            <div className="bg-white translate w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
+                <button onClick={handleToggle} className="w-40 -translate-x-28"><svg xmlns="http://www.w3.org/2000/svg" onClick={handleToggle} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed right-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 </svg>
 </button>
@@ -178,9 +178,9 @@ const EmailSetting = () =>{
                     &#9776;
                 </button>
             <h1 className="font-bold text-2xl">Subscriptions</h1>
-            <hr className="bg-gray-200 my-6 sm:w-96 w-64" />
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
           <Link to={'/reviews'}>
-           <span className="flex flex-row items-center flex-wrap gap-4 sm:gap-20">
+           <span className="flex flex-row items-center flex-wrap gap-10 sm:gap-20">
                 <span>
                     <p className="font-bold ">Job and company alert</p>
                     <p className="sm:w-96 w-52">Emails about new jobs matching your job searches and companies you follow
@@ -194,10 +194,10 @@ const EmailSetting = () =>{
             </Link> 
             <hr className="bg-gray-200 my-6 sm:w-96 w-64" />
             <h1 className="font-bold text-xl">Employer and recruiter emails</h1>
-            <hr className="bg-gray-200 my-6 w-64" />
+            <hr className="bg-gray-200 my-6 w-60 sm:w-96" />
 
             <Link to={'/user'}>
-           <span className="flex gap-2 flex-row sm:gap-20">
+           <span className="flex gap-10 flex-row sm:gap-20">
                 <span>
                     <p className="font-bold ">Resume contacts</p>
                     <p className="w-52 sm:w-96">Emails about new jobs matching your job searches and companies you follow
@@ -209,14 +209,14 @@ const EmailSetting = () =>{
 
             </span>
             </Link> 
-            <p className="flex flex-row w-64 flex-wrap gap-1 text-sm mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <p className="sm:flex sm:flex-row inline-flex w-60  flex-wrap gap-1 text-sm mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
             </svg>
             To stop receiving these messages, adjust your<Link to={'/user'}><span className="mt-3 sm:mt-0 text-blue-500"> Resume Privacy Settings </span></Link></p>
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
             <h1 className="text-2xl font-bold">Additional emails</h1>
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
-            <div className="flex flex-wrap gap-2 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
+            <div className="flex flex-row w-60 sm:w-96 gap-2 items-center my-6">
                 <label htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label">
                     <p className="font-bold">Application and account status</p>
                     <p>Updates on your active job applications and Indeed <br/> account</p>
@@ -226,8 +226,8 @@ const EmailSetting = () =>{
             <label  htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
-            <div className="flex flex-row flex-wrap gap-0 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
+            <div className="flex flex-row w-60 sm:w-96 gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Recommended jobs</p>
                     <p>Targeted job recommendations based on your resume<br/> and activity</p>
@@ -236,8 +236,8 @@ const EmailSetting = () =>{
             <label  htmlFor="checked" dark-theme={isto ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
-            <div className="flex flex-row flex-wrap gap-0 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
+            <div className="flex flex-row gap-0 sm:w-96 items-center w-60 my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Career guidance</p>
                     <p>Messages with career advice, company information, <br/> resume suggestions, and more</p>
@@ -247,8 +247,8 @@ const EmailSetting = () =>{
             <label  htmlFor="checks"  dark-theme={istog ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
-            <div className="flex flex-row flex-wrap gap-0 items-center my-6">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
+            <div className="flex flex-row sm:w-96 w-60 gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold ">Indeed feedback</p>
                     <p className="w-52">Requests from Indeed to provide feedback or <br/>participate in user studies and surveys</p>
@@ -258,13 +258,13 @@ const EmailSetting = () =>{
             <label  htmlFor="checkeds"  dark-theme={istogg ? "dark" : "light"} className="label"></label>
             </div>
 
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
-            <div className="border rounded-lg p-5 my-6 sm:w-8/12 w-72">
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
+            <div className="border rounded-lg p-5 my-6 sm:w-8/12 w-64">
                <h1>Want to get fewer emails from us?</h1>
-               <h1 className="text-blue-600 my-4">Unsubscribe from all commerce emails</h1>
-               <p className="sm:w-11/12 w-64">Indeed may still send you emails for confirmations and other messages relevant to how you interact with Indeed. You can unsubscribe from job alert, company alert, and daily job feed subscriptions by updating your individual preferences on the Job and company alerts page.</p>
+               <h1 className="text-blue-600 my-4 ">Unsubscribe from all commerce emails</h1>
+               <p className="sm:w-11/12 text-sm">Indeed may still send you emails for confirmations and other messages relevant to how you interact with Indeed. You can unsubscribe from job alert, company alert, and daily job feed subscriptions by updating your individual preferences on the Job and company alerts page.</p>
             </div>
-            <hr className="bg-gray-200 my-6 sm:w-96 w-72" />
+            <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
         </div>
         
         </section>

@@ -38,8 +38,8 @@ const Account = ({emails, phones}) =>{
             {
                 api.map((box, i) =>(
                     <div key={i}>
-                        <input id={i} type="checkbox" className="w-5 h-5 rounded-lg" value={box.name} onChange={(e) =>handleChange(e, i)} /><span className="m-4 font-bold -translate-y-4">{box.name}</span>
-                    </div>
+                        <input id={i} type="checkbox" className="w-5 h-5 rounded-lg" value={box.name} onChange={(e) =>handleChange(e, i)} /><div className="m-4 font-bold -translate-y-4">{box.name}</div>
+                    </div>  
                 ))
             }
         </div>
@@ -50,13 +50,13 @@ const Account = ({emails, phones}) =>{
                 emails.map((email) => {
 
                     return (
-                        <div className="flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-betweengap-32">
-                            <span className="">
+                        <div className="sm:flex sm:flex-row flex-col flex flex-wrap sm:flex-nowrap justify-around sm:justify-betweengap-32">
+                            <div className="">
                              <p className="text-blue-700 font-bold">Email</p>
                             <p>{email.email}</p>
-                             </span>
+                             </div>
 
-                            <Link to={`/emailid/${email.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg p-2">Change Email</button></Link>
+                            <Link to={`/emailid/${email.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg py-2 px-16 mt-4 sm:mt-0 sm:p-2">Change Email</button></Link>
     
                         </div>
                     )
@@ -71,13 +71,13 @@ const Account = ({emails, phones}) =>{
                 phones.map((phone) => {
 
                     return (
-                        <div className="flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between gap-14 my-10">
-                            <span className="">
+                        <div className="sm:flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between gap-14 my-10">
+                            <div className="">
                              <p className="text-blue-700 font-bold">Phone Number</p>
                             <p>{phone.phone}</p>
-                             </span>
+                             </div>
 
-                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg p-2">Change Phone</button></Link>
+                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold px-16 sm:px-2 rounded-lg p-2">Change Phone</button></Link>
     
                         </div>
                     )
@@ -169,9 +169,9 @@ const Account = ({emails, phones}) =>{
             </Link>
         </ul>
         </div>
-        <section className={`menu fixed top-0 h-full w-full left-0 sm:hidden ${toggle ? "block" : "hidden"}`} >
-            <div className="bg-white translate w-72 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
-                <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed right-6">
+        <section className={`menu fixed top-0 h-full w-full left-0 block sm:hidden ${toggle ? "block" : "hidden"}`} >
+            <div className="bg-white translate w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-28 h-full">
+                <button onClick={handleToggle} className="w-40 -translate-x-28"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 fixed right-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 </svg>
 </button>
@@ -229,8 +229,8 @@ const Account = ({emails, phones}) =>{
                 </button>
             <p className="font-bold text-2xl">Account settings</p>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
-            <span className="flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between">
-                <span>
+            <div className="flex flex-col sm:flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between">
+                <div>
                     <p className="font-bold">Account type:</p>
             <p> 
                 {
@@ -240,18 +240,18 @@ const Account = ({emails, phones}) =>{
                 )
             }
             </p>
-            </span>
-            <button onClick={handleType} className="text-blue-600 border border-blue-600 font-bold rounded-lg p-2">Change Account type</button>
+            </div>
+            <button onClick={handleType} className="text-blue-600 border  border-blue-600 font-bold rounded-lg py-2 px-2 mt-4 sm:mt-0 w-64 sm:p-2">Change Account type</button>
 
-            </span>
+            </div>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />           
-            <span className="">
-                <span>
+            <div className="">
+                <div>
                     <p>{content}</p>
-                </span>
+                </div>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
                 <p>{phonecontent}</p>
-             </span>
+             </div>
 
              <div className={`isolate z-10 fixed bg-black w-full h-full top-0 left-0 flex items-center justify-center opacity-80 ${type ? "block" : "hidden"}`}>
                 <div className={` bg-white p-10 rounded-lg ${type ? "block" : "hidden"}`}>
@@ -263,16 +263,16 @@ const Account = ({emails, phones}) =>{
                 </div>
             </div>
             <p className="font-bold ">Third-party applications</p>
-            <p className="">No third-party applications have access to your account</p>
+            <p className="w-64 sm:w-96">No third-party applications have access to your account</p>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
-            <span className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-around sm:justify-between">
+            <div className="flex-col flex sm:flex sm:flex-row sm:flex-nowrap sm:items-center justify-around sm:justify-between">
                 <p>odukoyasheriff@gmail.com</p>
                 <Link to={'/signin'}>
-                <button className="text-blue-600 border-gray-200 rounded-lg p-1 border">
+                <button className="text-blue-600 border-gray-200 rounded-lg py-2 px-16 mt-4 sm:mt-0 sm:p-1 border">
                 Signout
                 </button>
                 </Link>
-            </span>
+            </div>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
 
         </div>
