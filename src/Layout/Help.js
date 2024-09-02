@@ -5,7 +5,7 @@ const Help = () =>{
     return (
         <div>
 
-        <h1 className="font-bold text-blue-700 text-4xl mt-6 mx-10">SheriffPortifolio</h1>
+        <h1 className="font-bold text-blue-700 text-4xl  mt-6 text-center sm:text-start sm:mx-10">SheriffPortifolio</h1>
         <div className="flex-row flex flex-wrap items-center gap-4 m-10">
             <div className="bg-gray-200 px-3 pb-10 pt-4 w-96">
                 <h1 className="text-3xl">Help for Job Seekers</h1>
