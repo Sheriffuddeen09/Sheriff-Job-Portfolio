@@ -37,17 +37,17 @@ const Archive = ({ApplyDeleteSecond, jobseconds}) =>{
                         <img src={apply.image} width={70} alt="imagelogo" className="-translate-y-10"/>
                         <span>
                         <p className="bg-blue-50 text-blue-600 w-24 mb-1 text-center rounded-lg p-1 text-sm font-bold ">Applied</p>
-                        <p className="font-bold mb-1">{apply.job}</p> 
+                        <p className="font-bold mb-1 w-60">{apply.job}</p> 
                         <p>{apply.company}</p>
                         <p>{apply.state}</p>
-                        <p className="text-gray-400 text-sm">{apply.deadline}</p>
+                        <p className="text-gray-400 text-sm w-60">{apply.deadline}</p>
                         </span>
                     </span>
-                    <span className="inline-flex gap-8"><p className=" inline-flex gap-3 items-center rounded-lg w-56 border bg-gray-200 text-gray-700 h-8 font-bold text-center p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <span className="inline-flex gap-8"><p className=" inline-flex mt-6 gap-3 items-center rounded-lg w-56 border bg-gray-200 text-gray-700 h-8 font-bold text-center p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
 Application Withdraw</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer" onClick={flexhandle}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mt-6 cursor-pointer -translate-x-4" onClick={flexhandle}>
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
                     </svg>
                     </span>

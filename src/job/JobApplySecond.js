@@ -37,10 +37,10 @@ const JobApplySecond = ({ApplyDeleteSecond, jobseconds}) =>{
                         <img src={apply.image} width={70} alt="imagelogo" className="-translate-y-10"/>
                         <span>
                         <p className="bg-blue-50 text-blue-600 w-24 mb-1 text-center rounded-lg p-1 text-sm font-bold ">Applied</p>
-                        <p className="font-bold mb-1">{apply.job}</p> 
+                        <p className="font-bold mb-1 w-60">{apply.job}</p> 
                         <p>{apply.company}</p>
                         <p>{apply.state}</p>
-                        <p className="text-gray-400 text-sm">{apply.deadline}</p>
+                        <p className="text-gray-400 text-sm w-60">{apply.deadline}</p>
                         </span>
                     </span>
                     <span className="inline-flex translate-x-5 gap-8"><p className="rounded-lg w-32 border border-blue-200 text-blue-700 h-8 font-bold text-center translate-x-5 mt-2 sm:mt-0 p-1">Update Status</p>

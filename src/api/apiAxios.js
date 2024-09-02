@@ -1,7 +1,8 @@
 import axios from "axios"
 
     const api = axios.create({
-    baseURL:"https://blog-server-fi2x.onrender.com"
+   // baseURL:"https://blog-server-fi2x.onrender.com"
+     baseURL:"http://localhost:3500"
     });
 
 

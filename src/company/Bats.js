@@ -23,7 +23,7 @@ const Bats = ({companySearchResults}) =>{
         <div className="inline-flex gap-6 border border-gray-200 p-3 rounded-lg flex-wrap items-center">
 
             {content}
-             <p>VS</p>
+             <p className="sm:translate-y-0 translate-y-10">VS</p>
              <Rey companySearchResults={companySearchResults}/>
         </div>
     )

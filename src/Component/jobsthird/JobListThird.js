@@ -20,7 +20,7 @@ const handleSidebar = () =>{
         <div className="sm:w-96 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
-        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon lg:translate-x-10" onClick={handleMenuIcon}>
+        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon lg:translate-x-40" onClick={handleMenuIcon}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
 </svg>
 </p>
@@ -49,8 +49,8 @@ const handleSidebar = () =>{
 
           
         </div>
-          <div className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 l fixed bottom-96 lg:bottom-4 right-16 lg: fixed bottom-16 lg:right-60 lg:-translate-x-80 lg:w-52 ${menuicon ? "block" : "hidden"}`}>
-          <p className="inline-flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <div className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 relative sm:bottom-60 sm:left-96 bottom-72 left-28 -mb-60  ${menuicon ? "block" : "hidden"}`}>
+          <p className="inline-flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
 </svg>
 Save job</p>

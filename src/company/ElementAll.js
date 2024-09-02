@@ -28,7 +28,7 @@ const ElementAll = ({setCompanySearchResults, companys, companySearchResults}) =
             <h1 className="mt-14 font-bold text-4xl">Find great places to work</h1>
             <h1 className="text-2xl mt-6">Get access to millions of company reviews</h1>
             <p className="font-bold mt-6">Company name or job title</p>
-            <span className="flex mx-auto lg:inline-flex md:flex-wrap sm:-translate-y-8 lg:flex-nowrap flex-row mb-10 mt-1 gap-2">
+            <span className="flex flex-wrap mx-auto lg:inline-flex md:flex-wrap sm:-translate-y-8 lg:flex-nowrap flex-row mb-10 mt-1 gap-2">
                 <input type="text" onChange={handleChange} className="border w-72 border-black border-1 md:w-96 lg:w-11/12 rounded-lg p-1"/>
                 <button className="w-72 rounded-lg bg-blue-800 text-white p-1">Find Companies</button>
             </span>
@@ -47,7 +47,7 @@ const ElementAll = ({setCompanySearchResults, companys, companySearchResults}) =
         </div>
         
         <div >
-        <h1 className="mt-20 mb-6 text-3xl font-bold md:mx-36 lg:mx-36 mx-12">Compare working at</h1>
+        <h1 className="mt-20 mb-6 text-3xl font-bold md:mx-36 lg:mx-36 text-center sm:text-start">Compare working at</h1>
         <div className="flex flex-row items-center gap-6 flex-wrap justify-center">
         <Bats companySearchResults={companySearchResults}/>
         <Cocas companySearchResults={companySearchResults}/>

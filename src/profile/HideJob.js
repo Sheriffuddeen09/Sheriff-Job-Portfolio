@@ -16,7 +16,7 @@ const HideJob = () =>{
         </button>
             <h1 className="font-bold text-2xl mb-2">Hide jobs with these details</h1>
             <p>We’ll try to hide jobs asking for these qualifications or preferences.</p>
-            <div className="bg-gray-100 lg:w-9/12 lg: p-4 rounded-lg w-12/12 my-6">
+            <div className="bg-gray-100 lg:w-9/12 lg: p-4 rounded-lg w-72 my-6">
                 <p>When you provide feedback about the jobs shown in your search results and email notifications, you’ll see the details here.</p>
             </div>
             <footer className="text-center lg:text-start lg:translate-x-48 text-sm">©2024 Indeed - <span className="underline">Cookies, Privacy and Terms</span></footer>

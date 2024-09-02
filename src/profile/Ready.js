@@ -15,7 +15,7 @@ const Ready = () =>{
 
     return (
 
-        <div className="flex flex-col justify-center flex-wrap mx-10 items-center mt-6 sm:px-10 -translate-x-5 sm:-translate-x-0">
+        <div className="flex flex-col justify-center flex-wrap mx-10 items-center mt-6 sm:px-10 px-6 -translate-x-5 sm:-translate-x-0">
             <div>
             <button onClick={goBack}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
@@ -24,17 +24,19 @@ const Ready = () =>{
         </button>
             <h1 className="font-bold text-2xl mb-2">Ready to work</h1>
             <p>Let employers know that you can begin working right away.</p>
-            <div className="inline-flex gap-4 items-center my-6 -translate-x-4">
-            <input className="toggle" id='check'
+            <div className="inline-flex gap-8 items-center my-6 -translate-x-20">
+            <input className="toggle hidden lg:block" id='check'
             type="checkbox" onChange={handleChecked}/>
-            <label htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label"> I'm available to start immediately</label>
+             <input className="toggled" id='checked'
+            type="checkbox" onChange={handleChecked}/>
+            <label htmlFor="checked" dark-theme={istoggle ? "dark" : "light"} className="label w-72"> I'm available to start immediately</label>
            
             </div>
-            <p dark-theme={istoggle ? "dark" : "light"} className="am">
+            <p dark-theme={istoggle ? "dark" : "light"} className="am hidden sm:block">
                 Am available
             </p>
             <br />
-            <p dark-theme={istoggle ? "dark" : "light"} className="not">Am not available</p>
+            <p dark-theme={istoggle ? "dark" : "light"} className="not hidden sm:block">Am not available</p>
             <div className="flex flex-row flex-wrap items-center gap-2">
                 <Link to={'/user'}>
                     <p className="border sm:w-96 w-60 p-2 lg:w-20 rounded-lg text-red-400 font-bold text-center" >Cancel</p>

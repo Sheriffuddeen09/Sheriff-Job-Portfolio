@@ -1,12 +1,30 @@
 import axios from "axios";
 
 const apiFetch = axios.create({
-    baseURL:"https://blog-server-fi2x.onrender.com"
+    //baseURL:"https://blog-server-fi2x.onrender.com"
+    baseURL:"http://localhost:3500"
+
     });
 
 
 export const getPosts = async () =>{
     const response = await apiFetch.get('/accordions')
+    return response.data 
+}
+export const getAccordi = async () =>{
+    const response = await apiFetch.get('/accordionse')
+    return response.data 
+}
+export const getAccordio = async () =>{
+    const response = await apiFetch.get('/accordionth')
+    return response.data 
+}
+export const getAccordion = async () =>{
+    const response = await apiFetch.get('/accordionfr')
+    return response.data 
+}
+export const getAccordions = async () =>{
+    const response = await apiFetch.get('/accordionfi')
     return response.data 
 }
 export const getCompany = async () =>{

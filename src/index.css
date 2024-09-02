@@ -144,6 +144,7 @@ body{
 }
 .colors{
   background-color: whitesmoke;
+  color: black;
   width: 130px;
   padding: 8px;
   translate: 165px;
@@ -175,7 +176,6 @@ body{
   position: fixed;
   top: 120;
   margin-top: 3px;
-  width: 50%;
   translate: 135px;
   border-radius: 10px;
   line-height: 30px;
@@ -320,6 +320,47 @@ body{
   transition: background-color 250ms ease-in-out;
 }
 .toggle:checked + label::after{
+  transform: translateX(125%);
+}
+
+.toggled{
+
+  visibility: hidden;
+  margin-top: 15px;
+  display: inline-flex;
+}
+
+.toggled + label{
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+  color: black;
+  position: relative;
+}
+
+.toggled + label::before{
+  background-color: var(--body_background);
+  content: '';
+  height: 1.2em;
+  border: 1px solid rgb(65, 65, 255);
+  width: 2.5em;
+  transition: background-color 250ms ease-in-out;
+  border-radius: 1em;
+  margin-right: 0.45em;
+}
+.toggled + label::after{
+  background-color: var(--body_icon);
+  content: '';
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  border: 1px solid rgb(65, 65, 255);
+  left: .1em;
+  border-radius: 1em;
+  transition: background-color 250ms ease-in-out;
+}
+.toggled:checked + label::after{
   transform: translateX(125%);
 }
 .dark{

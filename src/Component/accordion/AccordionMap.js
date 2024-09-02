@@ -8,32 +8,26 @@ const AccordionMap = ({accordion}) =>{
     }
 return(
     <div className="" >
-            <div className="inline-flex z-10 isolate">
-               
-                <button onClick={toggleSubmit} className={` colors sm:mt-0 ${isVisible ? 'color' : 'colors'}`}>
-                    <p onClick={toggleSubmit}>{accordion.title}</p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class={`"w-4 relative left-1 top-0.5 font-bold text-gray-700" ${isVisible ? 'icon' : 'icons'}`} onClick={toggleSubmit}>
+          <button onClick={toggleSubmit} className={`colors inline-flex item-center ${isVisible ? "color" : "colors"}`}>
+        {accordion.title} 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 translate-x-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
 </svg>
-                </button>
-                <span>
-                <p className='text-white'>
-                
-
-                </p>
-            </span>
-            </div>
-            <div className={`container translate-20 sm:w-48 ${isVisible ? 'block' : 'hidden'}`}>
-            <p className="mt-2"> {accordion.body}</p>
-            <p className="mt-2"> {accordion.body1}</p>
-            <p className="mt-2"> {accordion.body2}</p>
-            <p className="mt-2"> {accordion.body3}</p>
-            <p className="mt-2"> {accordion.body4}</p>
-            <p className="mt-2"> {accordion.body5}</p>
-            <p className="mt-2"> {accordion.body6}</p>
-            <p className="mt-2"> {accordion.body7}</p>
-            <p className="mt-2"> {accordion.body8}</p>
-            </div>
+        </button>
         
+        <div onClick={toggleSubmit} className={`container translate-x-6 w-40 ${isVisible ? "block" : "hidden"}`}>
+            <p className="my-1">{accordion.body}</p>
+            <p className="my-1">{accordion.body2}</p>
+            <p className="my-1">{accordion.body3}</p>
+            <p className="my-1">{accordion.body4}</p>
+            <p className="my-1">{accordion.body5}</p>
+            <p className="my-1">{accordion.body6}</p>
+            <p className="my-1">{accordion.body7}</p>
+            <p className="my-1">{accordion.body8}</p>
+            <p className="my-1">{accordion.body9}</p>
+            <p className="my-1">{accordion.body10}</p>
+            
+        </div>
         </div>
 )
 }

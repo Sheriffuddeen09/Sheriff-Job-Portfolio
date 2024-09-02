@@ -14,27 +14,7 @@ const Accordion = () =>{
             return json
         })
     },[])
-    /*
-    const {
-        isloading,
-        isError,
-        error,
-        data: accordions
-    } = useQuery('accordions', getPosts)
-
-
-    let content 
-
-    if (isloading){
-        content = <p>loading</p>
-    } else if(isError){
-        content = <p>{error.message}</p>
-    }else {
-        content = accordions.map((accordion) =>{
-     return <AccordionMap key={accordion.id} accordion={accordion} />
-    })
-    }
-*/
+    
 
 let content
 

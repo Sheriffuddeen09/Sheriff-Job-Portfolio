@@ -24,7 +24,7 @@ const ElementJob = ({jobseconds, applys, ApplyDelete, ApplyDeleteSecond}) => {
     }, [])
 
     return(
-        <section className="p-4 mx-20">
+        <section className="p-4 sm:mx-20 mx-10">
             <h1 className="font-bold text-4xl my-6">My Jobs</h1>
             <div>
         <ul className="flex flex-row gap-10 ">

@@ -22,7 +22,7 @@ const Notification = () =>{
                         <span className="flex flex-row flex-wrap gap-4 ">
                             <span className="flex flex-wrap flex-row gap-4 wrap">
                                 <img src={message.image} alt="icon"/>
-                                <h2 className="w-96">{message.notification}</h2>
+                                <h2 className="sm:w-96 w-48">{message.notification}</h2>
                             </span>
                             <span>
                                 <p>{message.time}</p>
