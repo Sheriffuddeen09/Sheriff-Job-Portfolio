@@ -216,7 +216,7 @@ const EmailSetting = () =>{
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
             <h1 className="text-2xl font-bold">Additional emails</h1>
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="flex flex-row w-64 sm:w-96 gap-2 items-center my-6">
+            <div className="flex flex-row w-72 sm:w-96 gap-2 items-center my-6">
                 <label htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label">
                     <p className="font-bold">Application and account status</p>
                     <p>Updates on your active job applications and Indeed <br/> account</p>
@@ -227,7 +227,7 @@ const EmailSetting = () =>{
             </div>
 
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="flex flex-row w-64 sm:w-96 gap-0 items-center my-6">
+            <div className="flex flex-row w-72 sm:w-96 gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Recommended jobs</p>
                     <p>Targeted job recommendations based on your resume<br/> and activity</p>
@@ -237,7 +237,7 @@ const EmailSetting = () =>{
             </div>
 
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="flex flex-row gap-0 sm:w-96 items-center w-64 my-6">
+            <div className="flex flex-row gap-0 sm:w-96 items-center w-72 my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Career guidance</p>
                     <p>Messages with career advice, company information, <br/> resume suggestions, and more</p>
@@ -259,7 +259,7 @@ const EmailSetting = () =>{
             </div>
 
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="border rounded-lg p-5 my-6 sm:w-8/12 w-64">
+            <div className="border rounded-lg p-5 my-6 sm:w-8/12 w-72">
                <h1>Want to get fewer emails from us?</h1>
                <h1 className="text-blue-600 my-4 ">Unsubscribe from all commerce emails</h1>
                <p className="sm:w-11/12 text-sm">Indeed may still send you emails for confirmations and other messages relevant to how you interact with Indeed. You can unsubscribe from job alert, company alert, and daily job feed subscriptions by updating your individual preferences on the Job and company alerts page.</p>
