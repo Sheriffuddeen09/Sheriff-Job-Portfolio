@@ -56,7 +56,7 @@ const Account = ({emails, phones}) =>{
                             <p>{email.email}</p>
                              </div>
 
-                            <Link to={`/emailid/${email.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg py-2 px-16 mt-4 sm:mt-0 sm:p-2">Change Email</button></Link>
+                            <Link to={`/emailid/${email.id}`}><button className="text-blue-600 border border-blue-600 font-bold rounded-lg py-2 w-64 sm:w-52 mt-4 sm:mt-0 sm:p-2">Change Email</button></Link>
     
                         </div>
                     )
@@ -77,7 +77,7 @@ const Account = ({emails, phones}) =>{
                             <p>{phone.phone}</p>
                              </div>
 
-                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold px-16 sm:px-2 rounded-lg p-2">Change Phone</button></Link>
+                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold w-64  sm:w-52 sm:px-2 rounded-lg p-2">Change Phone</button></Link>
     
                         </div>
                     )
@@ -221,14 +221,14 @@ const Account = ({emails, phones}) =>{
                 <hr className="w-lvw -translate-x-4"/>
 </div>
 </section>
-        <div className="my-10">
+        <div className="mb-10 mt-8 p-3">
         <button onClick={handleToggle} 
                 className="text-3xl block sm:hidden relative -top-10
                  focus:outline-none">
                     &#9776;
                 </button>
             <p className="font-bold text-2xl">Account settings</p>
-            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
+            <hr className="bg-gray-200 my-6 w-60 sm:w-96 mx-auto" />
             <div className="flex flex-col sm:flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between">
                 <div>
                     <p className="font-bold">Account type:</p>
@@ -241,15 +241,15 @@ const Account = ({emails, phones}) =>{
             }
             </p>
             </div>
-            <button onClick={handleType} className="text-blue-600 border  border-blue-600 font-bold rounded-lg py-2 px-2 mt-4 sm:mt-0 w-64 sm:p-2">Change Account type</button>
+            <button onClick={handleType} className="text-blue-600 border  border-blue-600 font-bold rounded-lg py-2 mt-4 sm:mt-0 sm:w-64 w-64 sm:p-2">Change Account type</button>
 
             </div>
-            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />           
+            <hr className="bg-gray-200 my-6 w-60 sm:w-96 mx-auto" />           
             <div className="">
                 <div>
                     <p>{content}</p>
                 </div>
-            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
+            <hr className="bg-gray-200 my-6 w-60 sm:w-96 mx-auto" />
                 <p>{phonecontent}</p>
              </div>
 
@@ -264,16 +264,16 @@ const Account = ({emails, phones}) =>{
             </div>
             <p className="font-bold ">Third-party applications</p>
             <p className="w-64 sm:w-96">No third-party applications have access to your account</p>
-            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
+            <hr className="bg-gray-200 my-6 w-60 sm:w-96 mx-auto" />
             <div className="flex-col flex sm:flex sm:flex-row sm:flex-nowrap sm:items-center justify-around sm:justify-between">
                 <p>odukoyasheriff@gmail.com</p>
                 <Link to={'/signin'}>
-                <button className="text-blue-600 border-gray-200 rounded-lg py-2 px-16 mt-4 sm:mt-0 sm:p-1 border">
+                <button className="text-blue-600 border-gray-200 rounded-lg py-2 w-64 sm:52 mt-4 sm:mt-0 sm:p-1 border">
                 Signout
                 </button>
                 </Link>
             </div>
-            <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
+            <hr className="bg-gray-200 my-6 w-60 sm:w-96 mx-auto" />
 
         </div>
 </section>

@@ -728,8 +728,13 @@ const ReplyAdd = (title) =>{
             </div>} 
             />
             
-        <Route path='/emailsetting' element={<EmailSetting />} />
-        <Route path='/account' element={<Account emails={emails} phones={phones} />} />
+        <Route path='/emailsetting' element={<div className='overflow-hidden'>
+                                            <EmailSetting /> 
+                                            </div>} />
+        <Route path='/account' element={
+                                <div className='overflow-hidden'><Account emails={emails} phones={phones} />
+        
+                                </div>} />
         <Route path='/ready' element={<Ready />} />
         <Route path='/help' element={<Help />} />
         </Routes>

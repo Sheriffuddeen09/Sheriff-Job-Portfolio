@@ -173,7 +173,7 @@ const EmailSetting = () =>{
 </section>
         <div className="sm:ml-20 -ml-14 ">
         <button onClick={handleToggle} 
-                className="text-3xl block lg:hidden relative -top-5
+                className="text-3xl block lg:hidden relative -top-3
                  focus:outline-none">
                     &#9776;
                 </button>
@@ -216,7 +216,7 @@ const EmailSetting = () =>{
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
             <h1 className="text-2xl font-bold">Additional emails</h1>
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="flex flex-row w-60 sm:w-96 gap-2 items-center my-6">
+            <div className="flex flex-row w-64 sm:w-96 gap-2 items-center my-6">
                 <label htmlFor="check" dark-theme={istoggle ? "dark" : "light"} className="label">
                     <p className="font-bold">Application and account status</p>
                     <p>Updates on your active job applications and Indeed <br/> account</p>
@@ -227,7 +227,7 @@ const EmailSetting = () =>{
             </div>
 
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="flex flex-row w-60 sm:w-96 gap-0 items-center my-6">
+            <div className="flex flex-row w-64 sm:w-96 gap-0 items-center my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Recommended jobs</p>
                     <p>Targeted job recommendations based on your resume<br/> and activity</p>
@@ -237,7 +237,7 @@ const EmailSetting = () =>{
             </div>
 
             <hr className="bg-gray-200 my-6 sm:w-96 w-60" />
-            <div className="flex flex-row gap-0 sm:w-96 items-center w-60 my-6">
+            <div className="flex flex-row gap-0 sm:w-96 items-center w-64 my-6">
                 <label htmlFor="check"  className="label">
                     <p className="font-bold">Career guidance</p>
                     <p>Messages with career advice, company information, <br/> resume suggestions, and more</p>
