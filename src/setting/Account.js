@@ -50,7 +50,7 @@ const Account = ({emails, phones}) =>{
                 emails.map((email) => {
 
                     return (
-                        <div className="flex flex-row justify-around sm:justify-betweengap-32">
+                        <div className="flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-betweengap-32">
                             <span className="">
                              <p className="text-blue-700 font-bold">Email</p>
                             <p>{email.email}</p>
@@ -71,7 +71,7 @@ const Account = ({emails, phones}) =>{
                 phones.map((phone) => {
 
                     return (
-                        <div className="flex flex-row justify-around sm:justify-between gap-14 my-10">
+                        <div className="flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between gap-14 my-10">
                             <span className="">
                              <p className="text-blue-700 font-bold">Phone Number</p>
                             <p>{phone.phone}</p>
@@ -176,7 +176,7 @@ const Account = ({emails, phones}) =>{
 </svg>
 </button>
                 <Link to={'/account'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-between">
                  <p className="mt-14 mb-4 font-bold">Account</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-5">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -187,7 +187,7 @@ const Account = ({emails, phones}) =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/emailsetting'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-between">
                  <p className="mt-4 mb-4 font-bold">Email Settings</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -198,7 +198,7 @@ const Account = ({emails, phones}) =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/device'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-between">
                  <p className="mt-4 mb-4 font-bold">Device</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -209,7 +209,7 @@ const Account = ({emails, phones}) =>{
                 </Link>
                 <hr className="w-lvw -translate-x-4"/>
                 <Link to={'/privacy'}>
-                <span className="flex flex-row items-center justify-between">
+                <span className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-between">
                  <p className="mt-4 mb-4 font-bold">Privacy</p>
                  <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 translate-y-1">
   <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -229,7 +229,7 @@ const Account = ({emails, phones}) =>{
                 </button>
             <p className="font-bold text-2xl">Account settings</p>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
-            <span className="flex flex-row justify-around sm:justify-between">
+            <span className="flex flex-row flex-wrap sm:flex-nowrap justify-around sm:justify-between">
                 <span>
                     <p className="font-bold">Account type:</p>
             <p> 
@@ -265,7 +265,7 @@ const Account = ({emails, phones}) =>{
             <p className="font-bold ">Third-party applications</p>
             <p className="">No third-party applications have access to your account</p>
             <hr className="bg-gray-200 my-6 w-80 sm:w-96 mx-auto" />
-            <span className="flex flex-row items-center justify-around sm:justify-between">
+            <span className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-around sm:justify-between">
                 <p>odukoyasheriff@gmail.com</p>
                 <Link to={'/signin'}>
                 <button className="text-blue-600 border-gray-200 rounded-lg p-1 border">

@@ -171,7 +171,7 @@ const EmailSetting = () =>{
                 <hr className="w-lvw -translate-x-4"/>
 </div>
 </section>
-        <div className="sm:ml-20 -ml-6 ">
+        <div className="sm:ml-20 -ml-14 ">
         <button onClick={handleToggle} 
                 className="text-3xl block lg:hidden relative -top-5
                  focus:outline-none">
@@ -197,7 +197,7 @@ const EmailSetting = () =>{
             <hr className="bg-gray-200 my-6 w-64" />
 
             <Link to={'/user'}>
-           <span className="flex flex-wrap flex-row gap-20">
+           <span className="flex gap-2 flex-row sm:gap-20">
                 <span>
                     <p className="font-bold ">Resume contacts</p>
                     <p className="w-52 sm:w-96">Emails about new jobs matching your job searches and companies you follow
@@ -209,7 +209,7 @@ const EmailSetting = () =>{
 
             </span>
             </Link> 
-            <p className="flex flex-row flex-wrap gap-1 text-sm mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <p className="flex flex-row w-64 flex-wrap gap-1 text-sm mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
             </svg>
             To stop receiving these messages, adjust your<Link to={'/user'}><span className="mt-3 sm:mt-0 text-blue-500"> Resume Privacy Settings </span></Link></p>

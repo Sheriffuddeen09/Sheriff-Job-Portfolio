@@ -180,7 +180,7 @@ const Device = () => {
           </div>
         </div>
 
-        <div className="inline-flex mt-6 sm:translate-x-5 rounded-lg border">
+        <div className="inline-flex mt-6 translate-x-0 sm:translate-x-5 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
             <h1 className="font-bold mb-6 mt-3 p-1 px-2">Device</h1>
             <hr />
@@ -222,7 +222,7 @@ const Device = () => {
           </div>
         </div>
 
-        <div className="inline-flex mt-6 sm:translate-x-5 rounded-lg border">
+        <div className="inline-flex mt-6 -translate-x-2 sm:translate-x-5 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
             <h1 className="font-bold mb-6 mt-2 p-1 px-2">Device</h1>
             <hr />
@@ -243,7 +243,7 @@ const Device = () => {
           </div>
         </div>
 
-        <div className="inline-flex mt-6 rounded-lg border">
+        <div className="inline-flex mt-6 -translate-x-2 rounded-lg border">
           <div className="bg-gray-400 rounded-tl-lg rounded-bl-lg">
             <h1 className="font-bold mb-36 mt-2 p-1 sm:px-14 px-5">Device</h1>
             <hr />

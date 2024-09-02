@@ -722,7 +722,12 @@ const ReplyAdd = (title) =>{
         <Route path='/viewjob' element={<ViewApply jobs={jobs} />} />
         <Route path='/viewjobs' element={<ViewApplySecond jobseconds={jobseconds} />} />
         <Route path='/privacy' element={<Privacy />} />
-        <Route path='/device' element={<Device />} />
+        <Route path='/device' element={
+            <div className='overflow-hidden'>
+            <Device /> 
+            </div>} 
+            />
+            
         <Route path='/emailsetting' element={<EmailSetting />} />
         <Route path='/account' element={<Account emails={emails} phones={phones} />} />
         <Route path='/ready' element={<Ready />} />

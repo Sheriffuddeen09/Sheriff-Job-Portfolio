@@ -10,7 +10,7 @@ const Privacy = () =>{
 
     return (
         
-        <section className="p-4 mx-14 inline-flex gap-0">
+        <section className="p-4 sm:mx-14 inline-flex gap-0">
             <div className="sm:block hidden bg-gray-100 p-2 -mt-4 -translate-x-16">
             <button onClick={handleToggle} 
                 className="text-3xl sm:hidden relative -top-2 -right-40
