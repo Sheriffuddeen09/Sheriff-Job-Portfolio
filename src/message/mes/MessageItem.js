@@ -1,32 +1,9 @@
-import { postUrlPosts, postsUrlEndpoint as postsCacheKey } from "../api/axiosPost";
-import useSWR from "swr";
-import SkeletonPost from "../skeleton/SkeletonPost";
 import { Link } from "react-router-dom";
-const MessageItem = ({currentUserId}) =>{
-
-
-    const{
-        data:messages,
-        isLoading,
-        isError,
-        error
-        
-    } = useSWR([postsCacheKey, currentUserId],
-        ([url, userId]) => postUrlPosts(url, userId),
-        {suspense: true}
-    )
+const MessageItem = ({messages}) =>{
 
     let content 
 
-    if (isLoading){
-        content= [Array(5).keys()].map(i =>
-            <SkeletonPost key={i} />)
-    }
-
-    else if(isError){
-        content = <p>{error.message}</p>
-    }
-    else{
+   
      content = (
         <div>
             {
@@ -61,7 +38,7 @@ const MessageItem = ({currentUserId}) =>{
             }
         </div>
     )
-    }
+    
 
 
    

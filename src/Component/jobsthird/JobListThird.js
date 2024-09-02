@@ -20,7 +20,7 @@ const handleSidebar = () =>{
         <div className="sm:w-96 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
-        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon lg:translate-x-40" onClick={handleMenuIcon}>
+        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon translate-6 md:translate-x-28 lg:translate-x-40" onClick={handleMenuIcon}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
 </svg>
 </p>
@@ -49,7 +49,7 @@ const handleSidebar = () =>{
 
           
         </div>
-          <div className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 relative sm:bottom-60 sm:left-96 bottom-72 left-28 -mb-60  ${menuicon ? "block" : "hidden"}`}>
+          <div className={`z-10 bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 relative md:bottom-72 md:left-60 lg:bottom-60 sm:left-96 bottom-72 left-28 -mb-48  ${menuicon ? "block" : "hidden"}`}>
           <p className="inline-flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
 </svg>
@@ -65,9 +65,8 @@ Not interested</p>
       </div>
   </section>
   
-  <section className={`sideposition h fixed top-0 left-0 items-center 
-    md:h-full md:fixed md:top-0 md:left-0 md:w-screen md:-translate-x-0 md:bg-gray-50 md:bg-opacity-70 md:items-center 
-    lg:bg-transparent lg:left-80 lg:top-60 lg:w-6/12 lg:-translate-y-3 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
+  <section className={`sideposition z-10 sm:z-0 h fixed top-0 left-0 items-center 
+    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 lg:-translate-y-3 md:translate-y-32 md:translate-x-10 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
     <ViewJobThird jobthirds={jobthirds}/>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={handleSidebar} className={`size-6 md:fixed md:top-2 md:w-10 md:right-10 md:bg-gray-200 fixed top-10 w-10 right-6 bg-gray-200 lg:fixed lg:top-4 lg:w-6 lg:right-14 lg:bg-gray-200 cursor-pointer `} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />

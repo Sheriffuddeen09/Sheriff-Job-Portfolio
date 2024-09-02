@@ -234,44 +234,23 @@
       "typea": "New grad",
       "typeb": "Remote",
       "salary": "#200,000 a month"
-    },
-    {
-      "userId": 2,
-      "id": "1",
-      "company": "",
-      "message": "",
-      "date": "",
-      "image": "images/spam.png",
-      "inbox": "You have no messages in the spam folder",
-      "inboximg": "images/spam.png",
-      "sinbox": ""
-    },
-    {
-      "userId": 3,
-      "id": "1",
-      "company": "",
-      "message": "",
-      "date": "",
-      "image": "images/archive.jpg",
-      "inbox": "You have no archived messages",
-      "inboximg": "images/archive.jpg",
-      "sinbox": ""
     }
   ],
   "users": [
     {
-      "title": "inbox",
-      "id": "1"
-    },
-    {
-      "title": "Span",
-      "id": "2"
-    },
-    {
-      "title": "Archive",
-      "id": "3"
-    }
-  ],
+      "title1": "inbox",
+      "id": "1",
+      "image1":"images/spam.png",
+      "title2": "Span",
+      "message1":"You have no message in spam folder",
+      "select1":"Select a conversation to read message",
+      "message2":"You have no Archive message",
+      "select2":"Select a conversation to read message",
+      "image2":"images/archive.jpg",
+      "title3": "Archive"
+  } 
+ ],
+
   "notifys": [
     {
       "title": "Notification",

@@ -7,10 +7,10 @@ import MainForm from './Form/Main-Form'
 import Thanks from './Form/Thanks'
 import ElementAll from './company/ElementAll'
 import { getCertificate, getCertification, getCompany, getInbox, getInfos, getJobtitle, getLanguage, getLicences, getNewLanguage } from './api/axios'
-import MessageHome from './message/MessageHome'
-import MessageId from './message/MessageId'
+import MessageHome from './message/mes/MessageHome'
+import MessageId from './message/mes/MessageId'
 import moment from 'moment/moment'
-import { replys } from './message/Replymap'
+import { replys } from './message/mes/Replymap'
 import LoginPage from './Loginpage/LoginPage'
 import Register from './Loginpage/Register'
 import Notification from './notification/Notification'
@@ -62,6 +62,8 @@ import Device from './setting/Device'
 import Account from './setting/Account'
 import Help from './Layout/Help'
 import Footer from './Layout/Footer'
+import MessageSpam from './message/spam/MessageSpam'
+import MessageArchive from './message/archive/MessageArchive'
 const App = () =>{
     const [messages, setMessages] = useState([])
     const [replyLists, setReplyLists] = useState(replys)
@@ -533,6 +535,8 @@ const ReplyAdd = (title) =>{
     <Route path='/reviews' element={<ElementAll companys={companys} setCompanySearchResults={setCompanySearchResults} companySearchResults={companySearchResults} />}/>
     <Route path='/thanks' element={<Thanks />} />
     <Route path='/mes' element={<MessageHome/>} />
+    <Route path='/spam' element={<MessageSpam/>} />
+    <Route path='/archive' element={<MessageArchive/>} />
     <Route path='/mes/:id' element={<MessageId reply={reply} ReplySubmit={ReplySubmit} setReply={setReply} replyLists={replyLists} messages={messages}/>} />
     <Route path='/user' element={<About />}/>
     <Route path="/update/:id" element={ 

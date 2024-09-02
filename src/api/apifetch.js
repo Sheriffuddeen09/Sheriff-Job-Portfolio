@@ -1,14 +1,22 @@
 import axios from "axios";
 
 const apiFetchs = axios.create({
-    baseURL:"https://blog-server-fi2x.onrender.com"
-    //baseURL:"http://localhost:3500"
+    //baseURL:"https://blog-server-fi2x.onrender.com"
+    baseURL:"http://localhost:3500"
 
     });
 
 
 export const getJobs = async () =>{
     const response = await apiFetchs.get("/jobs")
+    return response.data 
+}
+export const getPostMessage = async () =>{
+    const response = await apiFetchs.get("/posts")
+    return response.data 
+}
+export const getUsers = async () =>{
+    const response = await apiFetchs.get("/users")
     return response.data 
 }
 export const getJobSeconds = async () =>{

@@ -17,7 +17,7 @@ const handleSidebar = () =>{
     <>
   <main className="">
       <section>
-        <div className="sm:w-96 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
+        <div className="w-72 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
         <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon -translate-x-6 sm:translate-x-10" onClick={handleMenuIcon}>
@@ -49,7 +49,7 @@ const handleSidebar = () =>{
 
           
         </div>
-          <div onClick={handleMenuIcon} className={` bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 relative sm:bottom-80 bottom-96 left-40 translate-y-0 -translate-y-20 sm:left-96 -mb-60  ${menuicon ? "block" : "hidden"}`}>
+          <div onClick={handleMenuIcon} className={`z-10 bg-white border-gray-200 border p-4 rounded-lg w-44 leading-10 relative sm:bottom-80 bottom-96 left-28 -translate-y-32 sm:-translate-y-20 md:left-60 lg:left-96 -mb-48  ${menuicon ? "block" : "hidden"}`}>
           <p className="inline-flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
 </svg>
@@ -65,8 +65,8 @@ Not interested</p>
       </div>
   </section>
   
-  <section className={`sideposition h fixed top-0 left-0 items-center 
-    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 sm:-translate-y-3 sm:translate-x-72 flex ${side ? "block" : "hidden"}`}>
+  <section className={`sideposition z-10 sm:z-0 h fixed top-0 left-0 items-center 
+    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 lg:-translate-y-3 md:translate-y-32 md:translate-x-10 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
     <ViewJob jobs={jobs}/>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={handleSidebar} className={`size-6 fixed top-10 w-10 right-6 bg-gray-200 sm:fixed sm:top-4 sm:w-6 sm:right-14 sm:bg-gray-200 cursor-pointer `} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />

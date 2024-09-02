@@ -1,16 +1,4 @@
-import { postUrlPosts, postsUrlEndpoint as postsCacheKey } from "../api/axiosPost";
-import useSWR from "swr";
-
-const Onlymessage = ({currentUserId}) =>{
-
-
-    const{
-        data:messages
-        
-    } = useSWR([postsCacheKey, currentUserId],
-        ([url, userId]) => postUrlPosts(url, userId),
-        {suspense: true}
-    )
+const Onlymessage = ({messages}) =>{
 
     const inboxcontent = (
         <div>

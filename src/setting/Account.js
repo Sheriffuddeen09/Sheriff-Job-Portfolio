@@ -77,7 +77,7 @@ const Account = ({emails, phones}) =>{
                             <p>{phone.phone}</p>
                              </div>
 
-                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold w-64  sm:w-52 sm:px-2 rounded-lg p-2">Change Phone</button></Link>
+                            <Link to={`/phoneid/${phone.id}`}><button className="text-blue-600 border border-blue-600 font-bold w-64 mt-4 sm:mt-0  sm:w-52 sm:px-2 rounded-lg p-2">Change Phone</button></Link>
     
                         </div>
                     )
