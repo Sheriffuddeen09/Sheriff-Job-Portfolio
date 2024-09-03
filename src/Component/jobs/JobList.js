@@ -17,7 +17,7 @@ const handleSidebar = () =>{
     <>
   <main className="">
       <section>
-        <div className="w-72 border cursor-pointer p-6 my-6 mx-4 sm:mx-10 rounded-lg lg:w-5/12 lg:mx-24">
+        <div className="sm:w-96 border cursor-pointer p-6 my-6 sm:mx-10 w-72 mx-4 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
         <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon -translate-x-6 sm:translate-x-10" onClick={handleMenuIcon}>
@@ -66,7 +66,7 @@ Not interested</p>
   </section>
   
   <section className={`sideposition z-10 sm:z-0 h fixed top-0 left-0 items-center 
-    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 lg:-translate-y-3 md:translate-y-32 md:translate-x-10 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
+    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 lg:-translate-y-3 md:translate-y-32 md:translate-x-28 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
     <ViewJob jobs={jobs}/>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={handleSidebar} className={`size-6 fixed top-10 w-10 right-6 bg-gray-200 sm:fixed sm:top-4 sm:w-6 sm:right-14 sm:bg-gray-200 cursor-pointer `} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />

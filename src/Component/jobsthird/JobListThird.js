@@ -66,7 +66,7 @@ Not interested</p>
   </section>
   
   <section className={`sideposition z-10 sm:z-0 h fixed top-0 left-0 items-center 
-    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 lg:-translate-y-3 md:translate-y-32 md:translate-x-10 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
+    sm:bg-transparent sm:left-80 sm:top-60 sm:w-6/12 lg:-translate-y-3 md:translate-y-32 md:translate-x-28 lg:translate-x-72 flex ${side ? "block" : "hidden"}`}>
     <ViewJobThird jobthirds={jobthirds}/>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onClick={handleSidebar} className={`size-6 md:fixed md:top-2 md:w-10 md:right-10 md:bg-gray-200 fixed top-10 w-10 right-6 bg-gray-200 lg:fixed lg:top-4 lg:w-6 lg:right-14 lg:bg-gray-200 cursor-pointer `} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
