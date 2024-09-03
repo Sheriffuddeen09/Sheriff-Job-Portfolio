@@ -15,8 +15,8 @@ const Header = () =>{
   }
     return (
         <>
-        <header className="bg-white">
-            <section className=" header pb-1 px-6 pt-6 flex gap-2 justify-between items-center ">
+        <header className="bg-white mb-20">
+            <section className=" header pb-1 px-6 pt-6 flex fixed top-0 bg-white  flex justify-between flex-row z-10 w-full gap-2 justify-between items-center gap-96 ">
             <div className="flex gap-4 justify-around">
                 <h1 className="text-3xl font-bold text-blue-700  h1">SheriffPortfolio</h1>
                 <button onClick={handleToggle} 

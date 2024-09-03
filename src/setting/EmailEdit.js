@@ -12,7 +12,7 @@ const EmailEdits = ({emails, email, setEmails}) =>{
 
     const handleForm = (e) =>{
         e.preventDefault()
-        navigate('/setting')
+        navigate('/account')
     }
     return (
 

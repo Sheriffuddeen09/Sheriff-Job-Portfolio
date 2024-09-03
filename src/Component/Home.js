@@ -27,7 +27,7 @@ const Home = ({jobs, searchResults,handleDelete, setSearchResults, jobseconds, j
     return (
         <>
         <div>
-            <form className="mt-0 flex flex-col  items-center sm:flex-row mx-auto mt-2 mb-6 items-center justify-center sm:border border-gray-600 sm:rounded-md w-8/12 sm:h-14 sm:shadow-md">
+            <form className="mt-0 flex flex-col  items-center sm:flex-row mx-auto mt-2 mb-6 items-center mt-20 justify-center sm:border border-gray-600 sm:rounded-md w-8/12 sm:h-14 sm:shadow-md">
             <input type="text" placeholder="job title, keywords, or company" className="w-72 h-12 py-3 px-8 border shadow-slate-700 outline-none border-gray-500 rounded-tl-lg rounded-tr-lg input sm:border-y-0 sm:border-l-0 sm:rounded-tr-none rounded-tl-lg " 
             onChange={handleChange}
             id="search"

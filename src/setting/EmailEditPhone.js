@@ -12,7 +12,7 @@ const EmailEditPhone = ({phones, phone, setPhones}) =>{
 
     const handleForm = (e) =>{
         e.preventDefault()
-        navigate('/setting')
+        navigate('/account')
     }
     return (
 
