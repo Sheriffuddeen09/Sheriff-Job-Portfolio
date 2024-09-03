@@ -18,9 +18,9 @@ const MessageId = ({messages, reply, setReply, replyLists, ReplySubmit}) =>{
 
     return(
 
-        <div className=" flex flex-row justify-around mx-5 sm:mx-14 items-center">
+        <div className=" flex flex-row justify-around translate-x-3 sm:mx-14 items-center">
             <Copymessage />
-            <div className="bg-gray-100 -translate-x-4 md:mx-auto md:tramsate-x-20 sm:w-4/12 w-72 mx-auto mt-4 sm:mx-0  md:relative md:left-20 md:top-20 rounded-lg lg:relative lg:left-0 lg:top-0 rounded-lg border border-black" style={{ height:"535px"}}>
+            <div className="bg-gray-100 -translate-x-4 md:-translate-x-8 lg:translate-x-6 md:-translate-y-24 lg:translate-y-0 md:mx-auto md:tramsate-x-20 md:w-6/12 lg:w-4/12 w-72 mx-auto mt-4 sm:mx-0  md:relative md:left-20 md:top-20 rounded-lg lg:relative lg:left-0 lg:top-0 rounded-lg border border-black" style={{ height:"535px"}}>
             {
                 <>
                <div className="flex flex-row items-center  bg-white border border-black border-t-0 border-r-0 border-l-0 p-4 rounded-tr-lg rounded-tl-lg justify-between"  >
@@ -71,9 +71,9 @@ const MessageId = ({messages, reply, setReply, replyLists, ReplySubmit}) =>{
                     <form>
                     <textarea  value={reply}
                     onChange={(e) =>setReply(e.target.value)}
-                    className=" outline-blue-700 border p-3 border-black w-72 sm:w-96 h-20 border-l-0 border-r-0 border-b-0 "
+                    className=" outline-blue-700 border p-3 border-black md:w-80 md:translate-x-2 w-72 sm:w-96 h-20 border-l-0 border-r-0 border-b-0 bg-gray-100"
                     placeholder="Write message"/>
-                    <div className="bg-white px-2 h-14 rounded-b-lg -mt-2">
+                    <div className="bg-gray-100 px-2 h-14 rounded-b-lg -mt-2">
                     <button onClick={ReplySubmit} className="bg-blue-500 text-white p-2 rounded-lg sm:mt-1 mt-3">Send</button>
                     </div>
                     </form>

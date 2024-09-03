@@ -22,7 +22,7 @@ const MessageHome = () =>{
                     <MessageList />
                     <MessageItem messages={messages}/>
                     </div>  
-                    <div className="p-4 rounded-lg mx-auto hidden lg:block w-7/12 bg-gray-100">
+                    <div className="p-4 rounded-lg mx-auto hidden sm:block w-7/12 bg-gray-100">
                     <Onlymessage messages={messages}/>
                     </div>
                 </div>

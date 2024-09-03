@@ -17,7 +17,7 @@ const Copymessage = () =>{
     const content = <CopyItem messages={messages}/>
                             
     return (
-        <div className="flex flex-row lg:block hidden">
+        <div className="flex flex-row md:-mx-20 sm:block hidden">
             <div className="bg-gray-100 w-96 flex-col flex items-center m-6 p-4
             rounded-lg">
                   <MessageList />

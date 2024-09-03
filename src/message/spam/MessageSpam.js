@@ -23,7 +23,7 @@ const MessageSpam = () =>{
                     <SpamList users={users}/>
                     <SpamItem users={users}/>
                     </div>  
-                    <div className="p-4 rounded-lg mx-auto hidden lg:block w-7/12 bg-gray-100">
+                    <div className="p-4 rounded-lg mx-auto hidden sm:block w-7/12 bg-gray-100">
                     <OnlySpam users={users}/>
                     </div>
                 </div>

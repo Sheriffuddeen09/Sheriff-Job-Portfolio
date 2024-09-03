@@ -24,7 +24,7 @@ let content
 
 
     return (
-    <div className="flex gap-0 gap-3 items-center translate-x-10 sm:translate-x-0 justify-center mx-auto scrollbar scroll-p-0 scroll-my-3 scroll-smooth scrollbars scrollbar-thumb-gray-200 scrollbar-thin scrollbar-track-white sm:flex flex-row items-center justify-center sm:mx-auto sm:mr-52">
+    <div className="flex gap-0 gap-3 items-center justify-center mx-auto scrollbar scroll-p-0 scroll-my-3 scroll-smooth scrollbars scrollbar-thumb-gray-200 scrollbar-thin scrollbar-track-white sm:flex flex-row items-center justify-center sm:mx-auto sm:mr-52">
         {content}
     </div>
     )

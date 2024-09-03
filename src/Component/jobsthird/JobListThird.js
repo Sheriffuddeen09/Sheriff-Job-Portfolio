@@ -20,7 +20,7 @@ const handleSidebar = () =>{
         <div className="sm:w-96 border cursor-pointer p-6 my-6 sm:mx-10 w-72 mx-4 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
-        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon translate-6 md:translate-x-28 lg:translate-x-40" onClick={handleMenuIcon}>
+        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon relative left-28 md:translate-x-28 lg:translate-x-40" onClick={handleMenuIcon}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
 </svg>
 </p>

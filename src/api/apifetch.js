@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const apiFetchs = axios.create({
-    baseURL:"https://blog-server-fi2x.onrender.com"
-    //baseURL:"http://localhost:3500"
+    //baseURL:"https://blog-server-fi2x.onrender.com"
+    baseURL:"http://localhost:3500"
 
     });
 
