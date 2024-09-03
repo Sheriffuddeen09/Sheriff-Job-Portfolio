@@ -15,7 +15,7 @@ return(
 </svg>
         </button>
         
-        <div onClick={toggleSubmit} className={`container translate-x-6 w-40 ${isVisible ? "block" : "hidden"}`}>
+        <div onClick={toggleSubmit} className={`container translate-x-16 w-40 ${isVisible ? "block" : "hidden"}`}>
             <p className="my-1">{accordion.body}</p>
             <p className="my-1">{accordion.body2}</p>
             <p className="my-1">{accordion.body3}</p>

@@ -18,7 +18,7 @@ const MessageArchive = () =>{
    
     const content =
                   <div  className="flex flex-row p-3">
-                  <div className="bg-gray-100 sm:w-96 mx-auto flex-col flex items-center m-6 p-4 -translate-x-4
+                  <div className="bg-gray-100 sm:w-96 mx-auto flex-col flex items-center m-6 p-4 -translate-x-1
                     rounded-lg">
                     <ArchiveList users={users}/>
                     <ArchiveItem users={users}/>
