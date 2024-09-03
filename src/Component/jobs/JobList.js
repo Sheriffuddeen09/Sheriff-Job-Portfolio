@@ -17,7 +17,7 @@ const handleSidebar = () =>{
     <>
   <main className="">
       <section>
-        <div className="w-72 border cursor-pointer p-6 my-6 mx-10 rounded-lg lg:w-5/12 lg:mx-24">
+        <div className="w-72 border cursor-pointer p-6 my-6 mx-4 sm:mx-10 rounded-lg lg:w-5/12 lg:mx-24">
         <span className="flex flex-row items-center ">
         <p onClick={handleSidebar} className="text-1xl font-bold jobtitle">{job.job}</p>
         <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 menuicon -translate-x-6 sm:translate-x-10" onClick={handleMenuIcon}>
