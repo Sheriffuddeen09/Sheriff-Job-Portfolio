@@ -6,7 +6,7 @@ const NewEducation = ({neweducations}) =>{
               {
                 neweducations.map((neweducation) =>{
                     return(
-                        <div className="flex flex-row justify-between flex-wrap lg:gap-80">
+                        <div className="flex flex-row justify-between lg:gap-80">
                         <span>
                         <p className="font-bold mb-2">{neweducation.title}</p>
                         <p className="mb-4">{neweducation.year}</p>
