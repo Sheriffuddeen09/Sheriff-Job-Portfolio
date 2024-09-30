@@ -29,14 +29,14 @@ const EditJob= ({jobtitles, jobtitle, setJobtitles}) =>{
             <hr className="my-0 w-full"/>
                 <label className="font-bold mb-4 mt-4">What are your desired job titles?</label>
                 <label className="mb-2">Add up to ten job titles</label>
-            <input className=" w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1"
+            <input className=" w-60 sm:w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1"
             name="title"
             type="text"
             value={jobtitle.title}
             onChange={handleUpdate}
             />
             <div className="inline-flex gap-8 items-center ">
-           <input className={`w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1 mt-6 ${view ? "block" : "hidden"}`}
+           <input className={`w-60 sm:w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1 mt-6 ${view ? "block" : "hidden"}`}
             name="name"
             type="text"
             value={jobtitle.name}

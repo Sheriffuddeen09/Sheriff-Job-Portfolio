@@ -23,10 +23,10 @@ const EditBasePay= ({basepays, basepay, setBasePays, handleDeleted}) =>{
                 <label className="text-2xl font-bold -mt-8">Edit Pay</label>
                 <hr className="my-4"/>
                 <label>What is the minimum pay you'll consider in your search?</label>
-            <div className="inline-flex items-center gap-2">
+            <div className="flex flex-row flex-wrap items-center gap-2">
             <span className="flex flex-col">
             <label className="font-bold mt-2">Minimum base pay</label>
-            <input className=" w-72 h-10 rounded-lg border-2 border-blue-700 px-2 p-1 mb-4"
+            <input className=" w-60 sm:w-72 h-10 rounded-lg border-2 border-blue-700 px-2 p-1 mb-4"
             name="amount"
             type="text"
             value={basepay.amount}
@@ -35,7 +35,7 @@ const EditBasePay= ({basepays, basepay, setBasePays, handleDeleted}) =>{
             </span>
             <span className="flex flex-col">
             <label className="font-bold mt-2">Pay period</label>
-            <select name="month" value={basepay.month} className="w-72 border-blue-700 h-10 p-1 w-24 rounded-lg mb-4 border-2 " onChange={handleUpdate}>
+            <select name="month" value={basepay.month} className="w-60 sm:w-72 border-blue-700 h-10 p-1 w-24 rounded-lg mb-4 border-2 " onChange={handleUpdate}>
                 <option>select</option>
                 <option>per month</option>
                 <option>per year</option>

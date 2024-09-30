@@ -19,13 +19,13 @@ const EditAdd = ({education, educations, setEducations}) =>{
         <div>
              <>
              <form onSubmit={handleSubmit} className="flex flex-col bg-white opacity-150 p-12 rounded-xl isolate z-10">
-            <input className=" w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1"
+            <input className=" w-60 sm:w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1"
             name="empty"
             type="text"
             value={education.empty}
             onChange={handleUpdate}
             />
-             <input className=" w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1 mt-6" 
+             <input className=" w-60 sm:w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1 mt-6" 
             name="text"
             type="text"
             value={education.text}

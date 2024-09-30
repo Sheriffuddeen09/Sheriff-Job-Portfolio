@@ -21,7 +21,7 @@ const EducationId = ({educations, neweducations}) =>{
                                     <p className="font-bold text-3xl mb-6 mt-3">{education.title}</p>
                                     <hr className="my-4"/>
 
-                                    <div className="flex flex-row justify-between gap-44 flex-wrap lg:gap-80">
+                                    <div className="flex flex-row justify-between gap-20 flex-wrap lg:gap-80">
                                     <span>
                                     <p className="font-bold mb-2">{education.titlea}</p>
                                     <p className="mb-2">{education.name}</p>
@@ -47,7 +47,7 @@ const EducationId = ({educations, neweducations}) =>{
                                     </div>
                                     <hr className="my-4"/>
 
-                                    <div className="flex flex-row justify-between flex-wrap lg:gap-80">
+                                    <div className="flex flex-row justify-between flex-wrap gap-40 lg:gap-80">
                                     <span>
                                     <p className="font-bold mb-2">{education.titlec}</p>
                                     <p className="mb-4">{education.level}</p>

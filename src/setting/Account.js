@@ -18,7 +18,7 @@ const Account = ({emails, phones}) =>{
         setType(!type)
     }
     useEffect(() =>{
-        fetch("http://localhost:3500/check").then(data=>data.json()).then(val =>setApi(val))
+        fetch("http://localhost:3400/check").then(data=>data.json()).then(val =>setApi(val))
         localStorage.setItem('checklist', JSON.stringify(api))
     }, [api])
 
@@ -38,7 +38,7 @@ const Account = ({emails, phones}) =>{
             {
                 api.map((box, i) =>(
                     <div key={i}>
-                        <input id={i} type="checkbox" className="w-5 h-5 rounded-lg" value={box.name} onChange={(e) =>handleChange(e, i)} /><div className="m-4 font-bold -translate-y-4">{box.name}</div>
+                        <input id={i} type="checkbox" className="w-5 h-5 rounded-lg" value={box.name} onChange={(e) =>handleChange(e, i)} /><div className="m-4 font-bold -translate-y-11 translate-x-5">{box.name}</div>
                     </div>  
                 ))
             }
@@ -254,7 +254,7 @@ const Account = ({emails, phones}) =>{
              </div>
 
              <div className={`isolate z-10 fixed bg-black w-full h-full top-0 left-0 flex items-center justify-center opacity-80 ${type ? "block" : "hidden"}`}>
-                <div className={` bg-white p-10 rounded-lg ${type ? "block" : "hidden"}`}>
+                <div onClick={handleType} className={`sm:w-96 w-72 bg-white p-10 rounded-lg ${type ? "block" : "hidden"}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 fixed right-96 -translate-y-8" onClick={handleType}>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
@@ -282,3 +282,4 @@ const Account = ({emails, phones}) =>{
 }
 
 export default Account
+

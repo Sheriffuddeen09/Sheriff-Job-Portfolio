@@ -69,8 +69,8 @@ const Header = () =>{
             </section>
 
         </header>
-        <section  className={`menu fixed top-0 h-full w-full left-0 block lg:hidden ${toggle ? "block" : "hidden"}`} >
-            <div onClick={handleToggle} className="bg-white md:translate-x-40 w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-8 h-full mt-12">
+        <section  className={`menu z-10 fixed top-0 h-full w-full left-0 block lg:hidden ${toggle ? "block" : "hidden"}`} >
+            <div onClick={handleToggle} className="bg-white z-10 md:translate-x-40 w-96 md:w-full flex z-10	flex-col p-4 mx-auto translate-x-8 h-full mt-12">
                 <button onClick={handleToggle} className="w-40 md:translate-y-6 md:fixed md:top-0 md:right-32"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 mt-3 fixed left-2 ">
   <path stroke-linecap="round" stroke-linejoin="round" dx="M6 18 18 6M6 6l12 12" />
 </svg>

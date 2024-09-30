@@ -16,7 +16,7 @@ const EmailEdit = ({edits, setEdits, edit}) =>{
     }
     return (
 
-        <div className=" border border-black mt-32 p-4 w-96 flex flex-col items-center rounded-lg mx-auto h-60">
+        <div className=" border border-black mt-32 p-4 w-60 sm:w-96 flex flex-col items-center rounded-lg mx-auto h-60">
             <h1 className="text-xl font-bold mx-2 mb-2">Changing email address for {edit.name}</h1>
             <form onSubmit={handleForm} className="flex flex-col">
                 <label className="mr-48 mt-2 font-bold">New email address</label>

@@ -23,7 +23,7 @@ const SkillId = ({skills, newskills}) =>{
                                     <p className="font-bold text-3xl mb-6 mt-3">{skill.title}</p>
                                     <hr className="my-4"/>
 
-                                    <div className="flex flex-row justify-between gap-44 flex-wrap lg:gap-80">
+                                    <div className="flex flex-row justify-between gap-20 flex-wrap lg:gap-80">
                                     <span>
                                     <p className="font-bold mb-2">{skill.titlea}</p>
                                     <p className="mb-2">{skill.yeara}</p>

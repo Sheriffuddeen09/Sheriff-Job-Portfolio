@@ -19,14 +19,14 @@ const EditLicence= ({licences, licence, setLicences}) =>{
         <div>
              <>
              <form onSubmit={handleSubmit} className="flex flex-col bg-white opacity-150 p-12 rounded-xl isolate z-10">
-            <input className=" w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1"
+            <input className=" w-60 sm:w-96 h-10 rounded-lg border-2 border-blue-700 px-2 p-1"
             name="title"
             type="text"
             value={licence.title}
             onChange={handleUpdate}
             />
             <span>
-            <select name="from" value={licence.from} className="border-black p-1 w-24 rounded-lg my-4 border-2 " onChange={handleUpdate}>
+            <select name="from" value={licence.from} className="border-black w-60 sm:w-96 p-1 w-24 rounded-lg my-4 border-2 " onChange={handleUpdate}>
                 <option>2024</option>
                 <option>2023</option>
                 <option>2022</option>
