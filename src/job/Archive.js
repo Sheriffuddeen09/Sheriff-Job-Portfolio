@@ -54,7 +54,7 @@ Application Withdraw</p>
                     </div>
 
                     <div className={`bg-black opacity-90 w-full h-full fixed top-0 ${flex ? "block" : "hidden"}`}>
-                    <div className="bg-white flex flex-col border border-gray-400 mx-auto justify-center my-52 w-6/12 rounded-lg">
+                    <div className="bg-white flex flex-col border border-gray-400 mx-auto justify-center my-52 w-72 sm:w-6/12 rounded-lg">
                         <span className="flex flex-row justify-between  p-4">
                         <p className="text-2xl font-bold">Manage this application:</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer" onClick={flexhandle}>

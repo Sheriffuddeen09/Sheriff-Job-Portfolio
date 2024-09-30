@@ -18,7 +18,7 @@ const Account = ({emails, phones}) =>{
         setType(!type)
     }
     useEffect(() =>{
-        fetch("http://localhost:3400/check").then(data=>data.json()).then(val =>setApi(val))
+        fetch("https://blog-server-fi2x.onrender.com/check").then(data=>data.json()).then(val =>setApi(val))
         localStorage.setItem('checklist', JSON.stringify(api))
     }, [api])
 
