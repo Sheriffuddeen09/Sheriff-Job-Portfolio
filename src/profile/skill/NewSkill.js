@@ -6,7 +6,7 @@ const NewSkill = ({newskills}) =>{
               {
                 newskills.map((newskill) =>{
                     return(
-                        <div className="flex flex-row justify-between flex-wrap gap-52 lg:gap-80">
+                        <div className="flex flex-row justify-between flex-wrap gap-40 lg:gap-80">
                         <span>
                         <p className="font-bold mb-2">{newskill.title}</p>
                         <p className="mb-4">{newskill.year}</p>
